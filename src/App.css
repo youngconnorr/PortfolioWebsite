@@ -1,0 +1,59 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  color: black;
+  background-color: #242424;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+
+.intro-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  background: rgb(102, 188, 231);
+  background: linear-gradient(
+    311deg,
+    rgba(102, 188, 231, 1) 0%,
+    rgba(156, 210, 238, 1) 18%,
+    rgba(214, 237, 244, 1) 69%,
+    rgba(245, 245, 245, 1) 99%
+  );
+}
+
+.intro-links {
+  display: flex;
+}
+
+.link {
+  padding-right: 20px;
+  margin: 0;
+}
+
+.intro-name {
+  max-width: fit-content;
+  margin-top: 40%;
+  margin-left: 10%;
+}
+
+.intro-section-2 {
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+}
+
+.project-list {
+  background-color: green;
+}
+
+.project-section-name {
+  margin-top: 35%;
+  background-color: lightblue;
+}
