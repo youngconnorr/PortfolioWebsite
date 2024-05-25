@@ -90,17 +90,18 @@ h1 {
 
 .description-section {
   display: flex;
-  margin-left: 70px;
   padding-bottom: 20px;
 }
 
 .school-img {
-  margin-left: 50px;
-  transition-delay: 30s;
+  margin-left: 30px;
 }
 
 .school-section {
-  height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  height: fit-content;
 }
 
 .title-text-box {
@@ -108,23 +109,23 @@ h1 {
   margin-bottom: 50px;
 }
 
-.text-section {
+.map-projects {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+
+.single-project {
+  border: 1px solid black;
+  border-radius: 5%;
+  padding: 30px;
+  margin: 20px 0;
+  width: 800px;
+}
+
+.text-section2 {
   width: 500px;
   margin-bottom: 80px;
-}
-
-.activity {
-  margin-left: 110px;
-}
-
-.working-on-section {
-  height: 100vh;
-  margin-left: 70px;
-}
-
-.project-section {
-  margin-left: 70px;
-  height: 100vh;
 }
 
 .hidden {

@@ -1,5 +1,6 @@
 import "./App.css";
 import { useEffect } from "react";
+import { projects } from "./tools/Projects";
 import ubc from "./tools/ubc-logo-png-transparent.png";
 function App() {
   useEffect(() => {
@@ -35,47 +36,70 @@ function App() {
       </section>
 
       <section className="school-section">
-        <section className="description-section hidden">
-          <section className="hidden">
-            <h2>University of British Columbia</h2>
-            <p>Degree — Computer Science</p>
-            <p>GPA — 3.85 / 4.33</p>
+        <div className="school-part-of-section">
+          <section className="description-section hidden">
+            <section className="hidden">
+              <h2>University of British Columbia</h2>
+              <p>Degree — Computer Science</p>
+              <p>GPA — 3.85 / 4.33</p>
+            </section>
+            <img
+              src={ubc}
+              alt=""
+              width="180"
+              height="180"
+              className="school-img hidden"
+            />
           </section>
-          <img
-            src={ubc}
-            alt=""
-            width="180"
-            height="180"
-            className="school-img hidden"
-          />
-        </section>
+        </div>
 
-        <section className="activity hidden">
-          <section className="text-section">
-            <h3>Youcode 2024 Hackathon</h3>
-            <p className="text-box">
-              Created an interactive website that helps busy students improve
-              their health by recommending workouts and breathing exercises
-              according to their schedule.
+        <section className="working-on-section hidden">
+          <h2>Current working on</h2>
+          <section className="text-section2">
+            <h3>Path Finder</h3>
+            <p>
+              A web application that helps uses AI to easily plan your travel
+              itinerary!
             </p>
-            <p className="text-box">
-              Achived an honorable mention for our project
+            <p>
+              Tailored Itineraries: Utilizing the OpenAI API, Travel Planner
+              generates customized itineraries based on your destination and the
+              month of your travel. Get recommendations on places to visit,
+              restaurants to dine at, and clothing to pack, all curated for the
+              specific month you're traveling.
             </p>
-            <button>See DevPost</button>
           </section>
-
-          <h3>Hack The North 2024 Hackathon</h3>
-          <p>Upcoming event</p>
         </section>
       </section>
-
-      <section className="working-on-section hidden">
-        <h2>Working on</h2>
-      </section>
-
-      <section className="project-section hidden">
-        <h2>Projects:</h2>
-        <div>Display projects</div>
+      <div></div>
+      <section className="map-projects">
+        <h2>Projects</h2>
+        <div></div>
+        {projects.map((project) => (
+          <section className="single-project">
+            <div key={project.id}>
+              <h3>{project.name}</h3>
+              <p className="text-section">{project.description}</p>
+              <img
+                src={project.img}
+                alt=""
+                width="180"
+                height="180"
+                className="school-img hidden"
+              />
+              <button>
+                {" "}
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Check out project
+                </a>
+              </button>
+            </div>
+          </section>
+        ))}
       </section>
     </>
   );
