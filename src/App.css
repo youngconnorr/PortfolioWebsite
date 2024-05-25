@@ -1,9 +1,17 @@
+/* styles.css */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
   color-scheme: light dark;
   color: black;
-  background-color: #242424;
+  background: rgb(102, 188, 231);
+  background: linear-gradient(
+    311deg,
+    rgba(102, 188, 231, 1) 0%,
+    rgba(156, 210, 238, 1) 22%,
+    rgba(214, 237, 244, 1) 66%,
+    rgba(245, 245, 245, 1) 99%
+  );
 }
 
 body {
@@ -18,14 +26,6 @@ h1 {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 100vh;
-  background: rgb(102, 188, 231);
-  background: linear-gradient(
-    311deg,
-    rgba(102, 188, 231, 1) 0%,
-    rgba(156, 210, 238, 1) 18%,
-    rgba(214, 237, 244, 1) 69%,
-    rgba(245, 245, 245, 1) 99%
-  );
 }
 
 .intro-links {
@@ -38,22 +38,36 @@ h1 {
 }
 
 .intro-name {
-  max-width: fit-content;
   margin-top: 40%;
   margin-left: 10%;
+  margin-right: 27%;
+  padding: fit-content;
 }
 
-.intro-section-2 {
-  align-items: center;
-  justify-content: center;
-  background-color: beige;
+.typing-container {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-right: 0.15em solid black;
+  animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-.project-list {
-  background-color: green;
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-.project-section-name {
-  margin-top: 35%;
-  background-color: lightblue;
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
 }

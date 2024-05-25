@@ -1,5 +1,4 @@
 import "./App.css";
-import { projects } from "./tools/Projects";
 
 function App() {
   return (
@@ -7,26 +6,20 @@ function App() {
       <section className="intro-section">
         <div className="intro-section-1">
           <section className="intro-name">
-            <h1>Connor Young</h1>
+            <h1 className="typing-container">Connor Young</h1>
             <div className="intro-links">
               <h3 className="link">Github</h3>
               <h3 className="link">LinkedIn</h3>
               <h3 className="link">Email</h3>
             </div>
+            <h3>&lt; / &gt; </h3>
           </section>
-        </div>
-        <div className="intro-section-2">
-          <h2 className="project-section-name">Projects</h2>
-          <span className="project-list">
-            {projects.map((project) => (
-              <p key={project.id}>{project.name}</p>
-            ))}
-          </span>
         </div>
       </section>
 
       <section className="description-section">
-        <div>Education</div>
+        <div>University of British Columbia</div>
+        <p>Degree — Computer Science</p>
         <div>Working on</div>
       </section>
 
