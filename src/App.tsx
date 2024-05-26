@@ -41,7 +41,7 @@ function App() {
             <section className="hidden">
               <h2>University of British Columbia</h2>
               <p>Degree — Computer Science</p>
-              <p>GPA — 3.85 / 4.33</p>
+              <p>GPA — 3.85</p>
             </section>
             <img
               src={ubc}
@@ -57,11 +57,11 @@ function App() {
           <h2>Current working on</h2>
           <section className="text-section2">
             <h3>Path Finder</h3>
-            <p>
+            <p className="hidden">
               A web application that helps uses AI to easily plan your travel
               itinerary!
             </p>
-            <p>
+            <p className="hidden">
               Tailored Itineraries: Utilizing the OpenAI API, Travel Planner
               generates customized itineraries based on your destination and the
               month of your travel. Get recommendations on places to visit,
@@ -72,34 +72,67 @@ function App() {
         </section>
       </section>
       <div></div>
-      <section className="map-projects">
-        <h2>Projects</h2>
+      <section>
+        <h2 className="hidden">Projects</h2>
         <div></div>
-        {projects.map((project) => (
-          <section className="single-project">
-            <div key={project.id}>
-              <h3>{project.name}</h3>
-              <p className="text-section">{project.description}</p>
-              <img
-                src={project.img}
-                alt=""
-                width="180"
-                height="180"
-                className="school-img hidden"
-              />
-              <button>
-                {" "}
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+        <div className="map-projects">
+          <div>
+            {projects.map((project) => (
+              <div>
+                <div className="vertical-line"></div>
+
+                <section className="single-project hidden">
+                  <div key={project.id}>
+                    <h3>{project.name}</h3>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <p className="text-section">{project.description}</p>
+                      <img
+                        id="project-picture"
+                        src={project.img}
+                        alt=""
+                        className="school-img hidden"
+                      />
+                    </div>
+                    <button>
+                      {" "}
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Check out project
+                      </a>
+                    </button>
+                  </div>
+                </section>
+              </div>
+            ))}
+          </div>
+          {/* <section>
+            {projects.map((project) => (
+              <div>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
                 >
-                  Check out project
-                </a>
-              </button>
-            </div>
-          </section>
-        ))}
+                  <img
+                    id="project-picture"
+                    src={project.img}
+                    alt=""
+                    className="school-img hidden"
+                  />
+                </div>
+              </div>
+            ))}
+          </section> */}
+        </div>
       </section>
     </>
   );

@@ -1,4 +1,5 @@
 import Picture from "./drake.jpg";
+import mindfit from "./mindfit.png";
 
 interface Project {
   id: number;
@@ -13,15 +14,15 @@ export const projects: Project[] = [
     id: 1,
     name: "MindFit",
     description:
-      "Developed a personalized travel planning application using OpenAI’s API to tailor itineraries based on user preferences, featuring a Django-based real-time database with RESTful API for seamless management, a responsive React interface for enhanced user experience, and an optimized algorithm for creating and storing user itineraries.",
-    img: Picture,
+      "Programmed an interactive React app to integrate personalized exercise and meditation into students’ schedules. Achieved an honourable mention for the YouCode 2024 Hackathon",
+    img: mindfit,
     link: "https://devpost.com/software/mindfit-m9gb38",
   },
   {
     id: 2,
     name: "Liftify",
     description:
-      "Developed a personalized travel planning application using OpenAI’s API to tailor itineraries based on user preferences, featuring a Django-based real-time database with RESTful API for seamless management, a responsive React interface for enhanced user experience, and an optimized algorithm for creating and storing user itineraries.",
+      "Assembled a comprehensive Java application with a dynamic GUI using Java swing that logged workout personal records in different categories, elevating user convenience and data organization.",
     img: Picture,
     link: "https://github.com/youngconnorr/Liftify",
   },
@@ -29,7 +30,7 @@ export const projects: Project[] = [
     id: 3,
     name: "Photography Portfolio",
     description:
-      "Developed a personalized travel planning application using OpenAI’s API to tailor itineraries based on user preferences, featuring a Django-based real-time database with RESTful API for seamless management, a responsive React interface for enhanced user experience, and an optimized algorithm for creating and storing user itineraries.",
+      "Designed an interactive and dynamic React website displaying my portfolio as a photographer",
     img: Picture,
     link: "https://youngconnorr.github.io/",
   },
@@ -37,7 +38,7 @@ export const projects: Project[] = [
     id: 4,
     name: "Valentines",
     description:
-      "Developed a personalized travel planning application using OpenAI’s API to tailor itineraries based on user preferences, featuring a Django-based real-time database with RESTful API for seamless management, a responsive React interface for enhanced user experience, and an optimized algorithm for creating and storing user itineraries.",
+      "Made a website for valentine's day using Javascript, HTML and CSS.",
     img: Picture,
     link: "https://youngconnorr.github.io/Valentines-day/",
   },

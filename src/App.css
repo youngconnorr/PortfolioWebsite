@@ -23,6 +23,20 @@ h1 {
   font-size: 3.4rem;
 }
 
+#project-picture {
+  padding-left: 40vw;
+  margin-top: -50px;
+  position: absolute;
+  width: 50vw;
+  height: 48vh;
+}
+
+.vertical-line {
+  border-right: 1px solid black;
+  height: 120px;
+  width: 320px;
+}
+
 .intro-section {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -111,19 +125,19 @@ h1 {
 
 .map-projects {
   display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-around;
 }
 
 .single-project {
-  border: 1px solid black;
-  border-radius: 5%;
-  padding: 30px;
-  margin: 20px 0;
-  width: 800px;
+  margin: 20px;
+  width: 600px;
 }
 
 .text-section2 {
+  width: 500px;
+  margin-bottom: 80px;
+}
+
+.text-section {
   width: 500px;
   margin-bottom: 80px;
 }
