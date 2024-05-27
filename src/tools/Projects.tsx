@@ -1,11 +1,15 @@
 import Picture from "./drake.jpg";
 import mindfit from "./mindfit.png";
+import liftify from "./liftify.png";
+import photoWebsite from "./photoWebsite.png";
 
 interface Project {
   id: number;
   name: string;
   description: string;
   img: string;
+  imgWidth: string;
+  imgHeight: string;
   link: string;
 }
 
@@ -16,6 +20,8 @@ export const projects: Project[] = [
     description:
       "Programmed an interactive React app to integrate personalized exercise and meditation into students’ schedules. Achieved an honourable mention for the YouCode 2024 Hackathon",
     img: mindfit,
+    imgWidth: "650px",
+    imgHeight: "300px",
     link: "https://devpost.com/software/mindfit-m9gb38",
   },
   {
@@ -23,7 +29,9 @@ export const projects: Project[] = [
     name: "Liftify",
     description:
       "Assembled a comprehensive Java application with a dynamic GUI using Java swing that logged workout personal records in different categories, elevating user convenience and data organization.",
-    img: Picture,
+    img: liftify,
+    imgWidth: "500px",
+    imgHeight: "300px",
     link: "https://github.com/youngconnorr/Liftify",
   },
   {
@@ -31,7 +39,9 @@ export const projects: Project[] = [
     name: "Photography Portfolio",
     description:
       "Designed an interactive and dynamic React website displaying my portfolio as a photographer",
-    img: Picture,
+    img: photoWebsite,
+    imgWidth: "650px",
+    imgHeight: "300px",
     link: "https://youngconnorr.github.io/",
   },
   {
@@ -40,6 +50,8 @@ export const projects: Project[] = [
     description:
       "Made a website for valentine's day using Javascript, HTML and CSS.",
     img: Picture,
+    imgWidth: "650px",
+    imgHeight: "200px",
     link: "https://youngconnorr.github.io/Valentines-day/",
   },
   {
@@ -47,6 +59,8 @@ export const projects: Project[] = [
     name: "Hack The North 2024",
     description: "Coming soon",
     img: Picture,
+    imgWidth: "50vw",
+    imgHeight: "48vh",
     link: "https://hackthenorth.com/",
   },
 ];

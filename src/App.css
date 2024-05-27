@@ -27,8 +27,6 @@ h1 {
   padding-left: 40vw;
   margin-top: -50px;
   position: absolute;
-  width: 50vw;
-  height: 48vh;
 }
 
 .vertical-line {
@@ -130,6 +128,7 @@ h1 {
 .single-project {
   margin: 20px;
   width: 600px;
+  padding: 100px 0;
 }
 
 .text-section2 {

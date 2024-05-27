@@ -72,7 +72,7 @@ function App() {
         </section>
       </section>
       <div></div>
-      <section>
+      <section style={{ marginLeft: "30px" }}>
         <h2 className="hidden">Projects</h2>
         <div></div>
         <div className="map-projects">
@@ -94,6 +94,10 @@ function App() {
                       <img
                         id="project-picture"
                         src={project.img}
+                        style={{
+                          width: `${project.imgWidth}`,
+                          height: `${project.imgHeight}`,
+                        }}
                         alt=""
                         className="school-img hidden"
                       />
