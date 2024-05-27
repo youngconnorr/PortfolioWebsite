@@ -10,6 +10,9 @@ function App() {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
         }
+        //  else {
+        //   entry.target.classList.remove("show");
+        // }
       });
     });
 
@@ -84,13 +87,17 @@ function App() {
       <div></div>
       <section style={{ marginLeft: "30px" }}>
         <h2 className="project-title hidden">Projects</h2>
-        <div></div>
+        <div
+          style={{
+            borderTop: "1px solid black",
+            width: "900px",
+            marginLeft: "10px",
+          }}
+        ></div>
         <div className="map-projects">
           <div>
             {projects.map((project) => (
               <div>
-                <div className="vertical-line"></div>
-
                 <section className="single-project hidden">
                   <div key={project.id}>
                     <h3>{project.name}</h3>
@@ -124,6 +131,9 @@ function App() {
                     </button>
                   </div>
                 </section>
+                {project.id === projects.length ? null : (
+                  <div className="vertical-line"></div>
+                )}
               </div>
             ))}
           </div>

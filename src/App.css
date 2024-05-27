@@ -151,7 +151,7 @@ h1 {
 .single-project {
   margin: 20px;
   width: 600px;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .text-section2 {
@@ -165,7 +165,9 @@ h1 {
 }
 
 .project-title {
-  margin-left: 270px;
+  /* margin-left: 270px; */
+  margin-left: 10px;
+  font-size: 2em;
 }
 
 .hidden {
