@@ -9,8 +9,6 @@ function App() {
         console.log(entry);
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show");
         }
       });
     });
@@ -26,9 +24,21 @@ function App() {
           <section className="intro-name">
             <h1 className="typing-container">Connor Young</h1>
             <div className="intro-links">
-              <h3 className="link">Github</h3>
-              <h3 className="link">LinkedIn</h3>
-              <h3 className="link">Email</h3>
+              <h3 className="link">
+                <a href="https://github.com/youngconnorr">Github</a>
+              </h3>
+              <h3 className="link">
+                <a
+                  href="www.linkedin.com/in/connor-youngg
+
+"
+                >
+                  LinkedIn
+                </a>
+              </h3>
+              <h3 className="link">
+                <a href="mailto:youngconnorr@gmail.com">Email</a>
+              </h3>
             </div>
             <h3 className="link">&lt; / &gt; </h3>
           </section>
