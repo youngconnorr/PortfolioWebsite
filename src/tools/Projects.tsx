@@ -1,4 +1,3 @@
-import Picture from "./drake.jpg";
 import mindfit from "./mindfit.png";
 import liftify from "./liftify.png";
 import photoWebsite from "./photoWebsite.png";
