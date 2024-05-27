@@ -2,6 +2,7 @@ import Picture from "./drake.jpg";
 import mindfit from "./mindfit.png";
 import liftify from "./liftify.png";
 import photoWebsite from "./photoWebsite.png";
+import valentineDays from "./valentinesDay.png";
 
 interface Project {
   id: number;
@@ -49,18 +50,9 @@ export const projects: Project[] = [
     name: "Valentines",
     description:
       "Made a website for valentine's day using Javascript, HTML and CSS.",
-    img: Picture,
-    imgWidth: "650px",
+    img: valentineDays,
+    imgWidth: "450px",
     imgHeight: "200px",
     link: "https://youngconnorr.github.io/Valentines-day/",
-  },
-  {
-    id: 5,
-    name: "Hack The North 2024",
-    description: "Coming soon",
-    img: Picture,
-    imgWidth: "50vw",
-    imgHeight: "48vh",
-    link: "https://hackthenorth.com/",
   },
 ];

@@ -73,7 +73,7 @@ function App() {
       </section>
       <div></div>
       <section style={{ marginLeft: "30px" }}>
-        <h2 className="hidden">Projects</h2>
+        <h2 className="project-title hidden">Projects</h2>
         <div></div>
         <div className="map-projects">
           <div>
@@ -117,25 +117,6 @@ function App() {
               </div>
             ))}
           </div>
-          {/* <section>
-            {projects.map((project) => (
-              <div>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <img
-                    id="project-picture"
-                    src={project.img}
-                    alt=""
-                    className="school-img hidden"
-                  />
-                </div>
-              </div>
-            ))}
-          </section> */}
         </div>
       </section>
     </>

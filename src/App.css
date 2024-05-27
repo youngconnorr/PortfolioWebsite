@@ -141,6 +141,10 @@ h1 {
   margin-bottom: 80px;
 }
 
+.project-title {
+  margin-left: 270px;
+}
+
 .hidden {
   opacity: 0;
   filter: blur(5px);
