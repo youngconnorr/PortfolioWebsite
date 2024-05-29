@@ -1,7 +1,6 @@
 import "./App.css";
 import { useEffect } from "react";
 import { projects } from "./tools/Projects";
-import ubc from "./tools/ubc-logo-png-transparent.png";
 function App() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -51,6 +50,7 @@ function App() {
                 <h2>University of British Columbia</h2>
                 <p>Degree — Computer Science</p>
                 <p>GPA — 3.85</p>
+                <a>View ResumeADDD TO THIS ADD TO THIS</a>
               </section>
             </section>
           </div>
@@ -78,7 +78,7 @@ function App() {
         <section className=" interested-section">
           <div className="interested-buttons hidden">
             <p className="interested">Innovative Tech</p>
-            <p className="interested">Fullstack Development</p>
+            <p className="interested">Full Stack Development</p>
             <p className="interested">Volleyball</p>
             <p className="interested">Bouldering</p>
             <p className="interested">Good Music</p>
