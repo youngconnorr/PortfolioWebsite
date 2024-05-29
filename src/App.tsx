@@ -26,13 +26,31 @@ function App() {
             <h1 className="typing-container">Connor Young</h1>
             <div className="intro-links">
               <h3 className="link">
-                <a href="https://github.com/youngconnorr">Github</a>
+                <a
+                  href="https://github.com/youngconnorr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github
+                </a>
               </h3>
               <h3 className="link">
-                <a href="www.linkedin.com/in/connor-youngg">LinkedIn</a>
+                <a
+                  href="www.linkedin.com/in/connor-youngg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
               </h3>
               <h3 className="link">
-                <a href="mailto:youngconnorr@gmail.com">Email</a>
+                <a
+                  href="mailto:youngconnorr@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Email
+                </a>
               </h3>
             </div>
             <h3 className="link">&lt; / &gt; </h3>
@@ -50,13 +68,18 @@ function App() {
                 <h2>University of British Columbia</h2>
                 <p>Degree — Computer Science</p>
                 <p>GPA — 3.85</p>
-                <a>View ResumeADDD TO THIS ADD TO THIS</a>
+                <img
+                  src="./src/tools/ubc-black.png"
+                  alt="ubc logo"
+                  height="100px"
+                  style={{ marginLeft: "-20px" }}
+                />
               </section>
             </section>
           </div>
 
           <section className="working-on-section hidden">
-            <h2>Current working on</h2>
+            <h2>Currently working on</h2>
             <section className="text-section2">
               <h3>Path Finder</h3>
               <p className="hidden">
@@ -74,7 +97,9 @@ function App() {
           </section>
         </section>
 
-        <h2 className="center hidden">Parts of my life:</h2>
+        <h2 className="center hidden" style={{ marginTop: "20px" }}>
+          Parts of my life:
+        </h2>
         <section className=" interested-section">
           <div className="interested-buttons hidden">
             <p className="interested">Innovative Tech</p>
@@ -90,7 +115,23 @@ function App() {
 
       <section className="dark-green font-white">
         <div className="projects-section">
-          <h2 className="project-title hidden">Projects</h2>
+          <div style={{ display: "flex" }}>
+            <h2
+              className="project-title hidden"
+              style={{ marginRight: "30px" }}
+            >
+              Projects
+            </h2>
+            <a
+              href="mailto:youngconnorr@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ height: "23px", transform: "translateY(15px)" }}
+              className="hidden"
+            >
+              Email me for my resume!
+            </a>
+          </div>
           <div
             style={{
               borderTop: "1px solid white",

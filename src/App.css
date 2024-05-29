@@ -1,9 +1,8 @@
 /* styles.css */
 
 /* on smaller screens make project section flex wrap wrap */
-
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Titillium Web", sans-serif;
   color-scheme: light dark;
   color: black;
   /* background: #81b29a; */
@@ -194,12 +193,13 @@ section {
 }
 
 .projects-section {
-  margin-left: 30px;
+  display: grid;
+  justify-content: center;
 }
 
 .single-project {
-  margin: 20px;
-  width: 600px;
+  width: 0px;
+  margin: 10px;
 }
 
 .description-project {
@@ -265,7 +265,7 @@ section {
   justify-content: center;
 }
 
-.center .hidden {
+.hidden {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
@@ -282,4 +282,14 @@ section {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+@media (max-width: 1000px) {
+  .dark-green {
+    background-color: blue;
+  }
+
+  .single-project {
+    display: flex;
+  }
 }
