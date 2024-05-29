@@ -1,10 +1,13 @@
 /* styles.css */
 
+/* on smaller screens make project section flex wrap wrap */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
   color: black;
-  background: rgb(102, 188, 231);
+  /* background: #81b29a; */
+  /* background: rgb(102, 188, 231);
   background: linear-gradient(
     286deg,
     rgba(102, 188, 231, 1) 0%,
@@ -12,7 +15,7 @@
     rgba(200, 230, 243, 1) 25%,
     rgba(214, 237, 244, 1) 57%,
     rgba(245, 245, 245, 1) 100%
-  );
+  ); */
 }
 
 a {
@@ -46,14 +49,56 @@ h1 {
   font-size: 3.4rem;
 }
 
-#project-picture {
-  padding-left: 40vw;
-  margin-top: -50px;
-  position: absolute;
+section {
+  position: relative;
+}
+
+/* #project-picture {
+  position: relative;
+} */
+
+.spacer {
+  aspect-ratio: 900/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.beige {
+  background-color: #f4f1de;
+}
+
+.light-green {
+  background-color: #638471;
+}
+
+.dark-green {
+  background-color: #243e30;
+}
+
+.font-white a {
+  color: white !important;
+}
+
+.font-white a::after {
+  background-color: white !important;
+}
+
+.font-white {
+  color: white;
+}
+
+.layer1 {
+  background-image: url("./tools/layer1.svg");
+}
+
+.layer2 {
+  background-image: url("./tools/layer2.svg");
 }
 
 .vertical-line {
-  border-right: 1px solid black;
+  border-right: 1px solid white;
   height: 120px;
   width: 320px;
 }
@@ -61,7 +106,7 @@ h1 {
 .intro-section {
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 102vh;
+  height: 50vh;
 }
 
 .intro-links {
@@ -148,10 +193,18 @@ h1 {
   display: grid;
 }
 
+.projects-section {
+  margin-left: 30px;
+}
+
 .single-project {
   margin: 20px;
   width: 600px;
-  padding: 50px 0;
+}
+
+.description-project {
+  display: flex;
+  justify-content: space-between;
 }
 
 .text-section2 {
@@ -165,12 +218,54 @@ h1 {
 }
 
 .project-title {
-  /* margin-left: 270px; */
+  padding: 0;
+  margin: 0;
   margin-left: 10px;
   font-size: 2em;
 }
 
-.hidden {
+.interested-buttons {
+  display: flex;
+}
+
+.interested:hover {
+  cursor: default !important;
+}
+
+.interested {
+  cursor: default;
+}
+
+.interested {
+  background-color: transparent;
+  color: black;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 15px; /* Curved border radius */
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1em;
+}
+
+.interested:hover {
+  background-color: #243e30;
+  color: white;
+}
+
+.center {
+  margin-top: 100px;
+}
+
+.interested-section {
+  margin-top: 50px;
+}
+
+.interested-section,
+.center {
+  display: grid;
+  justify-content: center;
+}
+
+.center .hidden {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);

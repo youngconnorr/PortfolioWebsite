@@ -20,8 +20,8 @@ export const projects: Project[] = [
     description:
       "Programmed an interactive React app to integrate personalized exercise and meditation into students’ schedules. Achieved an honourable mention for the YouCode 2024 Hackathon",
     img: mindfit,
-    imgWidth: "650px",
-    imgHeight: "300px",
+    imgWidth: "65vw",
+    imgHeight: "50vh",
     link: "https://devpost.com/software/mindfit-m9gb38",
   },
   {
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     id: 3,
     name: "Photography Portfolio",
     description:
-      "Designed an interactive and dynamic React website displaying my portfolio as a photographer",
+      "Designed an interactive and dynamic React website displaying my portfolio as a photographer focusing on frontend design and UX/UI.",
     img: photoWebsite,
     imgWidth: "650px",
     imgHeight: "300px",
