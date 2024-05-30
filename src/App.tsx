@@ -1,6 +1,7 @@
 import "./App.css";
 import { useEffect } from "react";
 import { projects } from "./tools/Projects";
+import PFP from "./tools/linkedin-pfp.jpg";
 function App() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -23,37 +24,40 @@ function App() {
       <section className="intro-section beige">
         <div className="intro-section-1">
           <section className="intro-name">
-            <h1 className="typing-container">Connor Young</h1>
-            <div className="intro-links">
-              <h3 className="link">
-                <a
-                  href="https://github.com/youngconnorr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Github
-                </a>
-              </h3>
-              <h3 className="link">
-                <a
-                  href="www.linkedin.com/in/connor-youngg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
-                </a>
-              </h3>
-              <h3 className="link">
-                <a
-                  href="mailto:youngconnorr@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Email
-                </a>
-              </h3>
+            <div className="name-section">
+              <h1 className="typing-container">Connor Young</h1>
+              <div className="intro-links">
+                <h3 className="link">
+                  <a
+                    href="https://github.com/youngconnorr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Github
+                  </a>
+                </h3>
+                <h3 className="link">
+                  <a
+                    href="www.linkedin.com/in/connor-youngg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn
+                  </a>
+                </h3>
+                <h3 className="link">
+                  <a
+                    href="mailto:youngconnorr@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Email
+                  </a>
+                </h3>
+              </div>
+              <h3 className="link">&lt; / &gt; </h3>
             </div>
-            <h3 className="link">&lt; / &gt; </h3>
+            <img src={PFP} alt="" width="400px" className="intro-img" />
           </section>
         </div>
       </section>
@@ -83,15 +87,15 @@ function App() {
             <section className="text-section2">
               <h3>Path Finder</h3>
               <p className="hidden">
-                A web application that helps uses AI to easily plan your travel
-                itinerary!
+                A web application that uses AI to help you easily plan your
+                travel itinerary!
               </p>
               <p className="hidden">
-                Tailored Itineraries: Utilizing the OpenAI API, Travel Planner
-                generates customized itineraries based on your destination and
-                the month of your travel. Get recommendations on places to
-                visit, restaurants to dine at, and clothing to pack, all curated
-                for the specific month you're traveling.
+                Utilizing the OpenAI API, Travel Planner generates customized
+                itineraries based on your destination and the month of your
+                travel. Get recommendations on places to visit, restaurants to
+                dine at, and clothing to pack, all curated for the specific
+                month you're traveling.
               </p>
             </section>
           </section>
@@ -148,13 +152,13 @@ function App() {
                       <h3>{project.name}</h3>
                       <div className="description-project">
                         <div>
-                          <a
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                          <b
+                            className="check-out-button"
+                            onClick={() => window.open(project.link, "_blank")}
+                            style={{ cursor: "pointer" }}
                           >
-                            <b>Check out project</b>
-                          </a>
+                            Check out project
+                          </b>
                           <p className="text-section">{project.description}</p>
                         </div>
                         <img
