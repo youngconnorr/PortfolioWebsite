@@ -101,6 +101,7 @@ section {
   border-right: 1px solid white;
   height: 120px;
   width: 320px;
+  margin-left: 60px;
 }
 
 .intro-section {
@@ -201,15 +202,31 @@ section {
   transition: background-color 0.6s, color 0.3s;
 }
 
+.divider {
+  border-top: 1px solid white;
+  width: 62.5vw;
+  margin-left: 10px;
+}
+
 .school-img {
   margin-left: 30px;
 }
 
 .school-section {
+  height: fit-content;
   display: grid;
   grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
   justify-content: space-around;
-  height: fit-content;
+}
+
+.interests-section {
+  grid-column: 1 / -1;
+}
+
+.interest-list {
+  display: grid;
+  justify-content: center;
 }
 
 .title-text-box {
@@ -297,17 +314,17 @@ section {
   justify-content: center;
 }
 
-.hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
-}
-
 .img-hidden {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(40%);
+  transition: all 1s;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
   transition: all 1s;
 }
 
@@ -323,12 +340,94 @@ section {
   transform: translateX(0);
 }
 
-@media (max-width: 1000px) {
-  .dark-green {
-    background-color: blue;
+@media only screen and (max-width: 1215px) {
+  .interests-section {
+    display: none;
   }
 
-  .single-project {
+  .projects-section {
+    display: grid;
+    justify-content: center;
+  }
+
+  .description-project {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-name {
+    display: grid;
+    justify-content: center;
+  }
+
+  .project-image {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .name-section {
+    padding-right: 10vw;
+  }
+
+  .intro-img {
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 972px) {
+  .school-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .school-part-of-section {
+    margin-left: -190px;
+  }
+
+  .project-name {
+    display: grid;
+    justify-content: center;
+  }
+
+  .project-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 879px) {
+  .intro-img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .intro-img {
+    display: none;
+  }
+
+  .typing-container {
+    margin-bottom: 0px;
+    padding-right: 0px;
+    border-right: 0.15em solid black;
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  .intro-name {
+    display: flex;
+    margin-top: 28%;
+    margin-left: 5%;
+    width: fit-content;
+    margin-right: 0;
+  }
+
+  .interested {
+    margin-right: 0;
+  }
+
+  .name-section {
+    padding: 0;
   }
 }

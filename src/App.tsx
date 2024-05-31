@@ -6,16 +6,18 @@ function App() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry);
+        // console.log(entry);
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show");
+          // console.log(entry + "added to show");
         }
+        //  else {
+        //   entry.target.classList.remove("show");
+        // }
       });
     });
 
-    const hiddenElements = document.querySelectorAll(".hidden");
+    const hiddenElements = document.querySelectorAll(".hidden, .img-hidden");
     hiddenElements.forEach((el) => observer.observe(el));
   }, []);
 
@@ -65,7 +67,7 @@ function App() {
       <div className="spacer layer1"></div>
 
       <section style={{ height: "50vh" }} className="light-green">
-        <section className="school-section">
+        <div className="school-section">
           <div className="school-part-of-section">
             <section className="description-section hidden">
               <section className="hidden">
@@ -99,22 +101,22 @@ function App() {
               </p>
             </section>
           </section>
-        </section>
-
-        <h2 className="center hidden" style={{ marginTop: "20px" }}>
-          Parts of my life:
-        </h2>
-        <section className=" interested-section">
-          <div className="interested-buttons hidden">
-            <p className="interested">Innovative Tech</p>
-            <p className="interested">Full Stack Development</p>
-            <p className="interested">Volleyball</p>
-            <p className="interested">Bouldering</p>
-            <p className="interested">Good Music</p>
+          <div className="interests-section">
+            <h2 className="center hidden" style={{ marginTop: "20px" }}>
+              Parts of my life:
+            </h2>
+            <section className="interest-list">
+              <div className="interested-buttons hidden">
+                <p className="interested">Innovative Tech</p>
+                <p className="interested">Full Stack Development</p>
+                <p className="interested">Volleyball</p>
+                <p className="interested">Bouldering</p>
+                <p className="interested">Good Music</p>
+              </div>
+            </section>
           </div>
-        </section>
+        </div>
       </section>
-
       <div className="spacer layer2"></div>
 
       <section className="dark-green font-white">
@@ -136,25 +138,19 @@ function App() {
               Email me for my resume!
             </a>
           </div>
-          <div
-            style={{
-              borderTop: "1px solid white",
-              width: "900px",
-              marginLeft: "10px",
-            }}
-          ></div>
+          <div className="divider"></div>
           <div className="map-projects">
             <div>
               {projects.map((project) => (
                 <div>
                   <section className="single-project">
                     <div key={project.id}>
-                      <h3 className="hidden">{project.name}</h3>
+                      <h3 className="hidden project-name">{project.name}</h3>
                       <div className="description-project ">
                         <div>
                           <div className=" hidden">
                             <b
-                              className="check-out-button"
+                              className="check-out-button project-name"
                               onClick={() =>
                                 window.open(project.link, "_blank")
                               }
@@ -168,6 +164,7 @@ function App() {
                           </p>
                         </div>
                         <img
+                          className="project-image img-hidden"
                           id="project-picture"
                           src={project.img}
                           style={{
@@ -175,7 +172,6 @@ function App() {
                             height: `${project.imgHeight}`,
                           }}
                           alt=""
-                          className="project-image img-hidden"
                         />
                       </div>
                       {/* <a
