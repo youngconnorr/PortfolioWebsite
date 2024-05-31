@@ -66,7 +66,7 @@ function App() {
 
       <div className="spacer layer1"></div>
 
-      <section style={{ height: "50vh" }} className="light-green">
+      <section className="light-green grades-section">
         <div className="school-section">
           <div className="school-part-of-section">
             <section className="description-section hidden">
@@ -146,7 +146,7 @@ function App() {
                   <section className="single-project">
                     <div key={project.id}>
                       <h3 className="hidden project-name">{project.name}</h3>
-                      <div className="description-project ">
+                      <div className="description-project hidden">
                         <div>
                           <div className=" hidden">
                             <b

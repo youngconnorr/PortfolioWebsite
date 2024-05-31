@@ -97,6 +97,10 @@ section {
   background-image: url("./tools/layer2.svg");
 }
 
+.grades-section {
+  height: 50vh;
+}
+
 .vertical-line {
   border-right: 1px solid white;
   height: 120px;
@@ -429,5 +433,69 @@ section {
 
   .name-section {
     padding: 0;
+  }
+
+  .single-project {
+    width: 280px;
+  }
+
+  .map-projects {
+    width: 100%;
+  }
+
+  .text-section2 {
+    width: 280px;
+  }
+
+  .description-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projects-section {
+    width: 400px;
+  }
+
+  .school-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-name {
+    display: grid;
+    justify-content: center;
+  }
+
+  .project-title {
+    text-align: center;
+  }
+
+  .map-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .vertical-line {
+    border: none;
+  }
+
+  .hidden {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+  }
+
+  .description-section {
+    width: 280px;
+    margin-left: 200px;
+  }
+
+  .grades-section {
+    height: 80vh;
   }
 }
