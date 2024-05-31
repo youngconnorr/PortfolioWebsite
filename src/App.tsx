@@ -119,7 +119,7 @@ function App() {
       </section>
       <div className="spacer layer2"></div>
 
-      <section className="dark-green font-white">
+      <section className="dark-green font-white ">
         <div className="projects-section">
           <div style={{ display: "flex" }}>
             <h2

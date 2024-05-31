@@ -405,16 +405,25 @@ section {
   .intro-img {
     display: none;
   }
+  .vertical-line {
+    border: none;
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 430px) {
   .intro-img {
     display: none;
+  }
+
+  .intro-section-1 {
+    margin-left: 40px;
   }
 
   .typing-container {
     margin-bottom: 0px;
     padding-right: 0px;
+    font-size: 3em;
     border-right: 0.15em solid black;
     animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
   }
@@ -436,7 +445,8 @@ section {
   }
 
   .single-project {
-    width: 280px;
+    padding: 0;
+    margin: 0;
   }
 
   .map-projects {
@@ -447,6 +457,10 @@ section {
     width: 280px;
   }
 
+  .text-section {
+    width: 300px;
+  }
+
   .description-project {
     display: flex;
     flex-direction: column;
@@ -455,7 +469,8 @@ section {
   }
 
   .projects-section {
-    width: 400px;
+    /* width: 80px; */
+    margin-left: 40px;
   }
 
   .school-section {
@@ -481,6 +496,7 @@ section {
 
   .vertical-line {
     border: none;
+    display: none;
   }
 
   .hidden {
@@ -497,5 +513,15 @@ section {
 
   .grades-section {
     height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .intro-section-1 {
+    margin-left: 20px;
+  }
+
+  .projects-section {
+    margin-left: -10px;
   }
 }
