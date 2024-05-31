@@ -147,19 +147,25 @@ function App() {
             <div>
               {projects.map((project) => (
                 <div>
-                  <section className="single-project hidden">
+                  <section className="single-project">
                     <div key={project.id}>
-                      <h3>{project.name}</h3>
-                      <div className="description-project">
+                      <h3 className="hidden">{project.name}</h3>
+                      <div className="description-project ">
                         <div>
-                          <b
-                            className="check-out-button"
-                            onClick={() => window.open(project.link, "_blank")}
-                            style={{ cursor: "pointer" }}
-                          >
-                            Check out project
-                          </b>
-                          <p className="text-section">{project.description}</p>
+                          <div className=" hidden">
+                            <b
+                              className="check-out-button"
+                              onClick={() =>
+                                window.open(project.link, "_blank")
+                              }
+                              style={{ cursor: "pointer" }}
+                            >
+                              Check out project
+                            </b>
+                          </div>
+                          <p className="text-section hidden">
+                            {project.description}
+                          </p>
                         </div>
                         <img
                           id="project-picture"
@@ -169,7 +175,7 @@ function App() {
                             height: `${project.imgHeight}`,
                           }}
                           alt=""
-                          className="school-img hidden"
+                          className="project-image img-hidden"
                         />
                       </div>
                       {/* <a
