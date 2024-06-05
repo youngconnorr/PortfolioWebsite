@@ -59,7 +59,7 @@ function App() {
               </div>
               <h3 className="link">&lt; / &gt; </h3>
             </div>
-            <img src={PFP} alt="" width="400px" className="intro-img" />
+            <img src={PFP} alt="" width="400px" className="intro-img hidden" />
           </section>
         </div>
       </section>
