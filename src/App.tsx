@@ -41,7 +41,7 @@ function App() {
                 </h3>
                 <h3 className="link">
                   <a
-                    href="www.linkedin.com/in/connor-youngg"
+                    href="https://www.linkedin.com/in/connor-youngg"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
