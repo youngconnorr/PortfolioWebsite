@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect } from "react";
 import { projects } from "./tools/Projects";
 import PFP from "./tools/linkedin-pfp.jpg";
+import UBC from "./tools/ubc-black.png";
 function App() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -75,7 +76,7 @@ function App() {
                 <p>Degree — Computer Science</p>
                 <p>GPA — 3.85</p>
                 <img
-                  src="./src/tools/ubc-black.png"
+                  src={UBC}
                   alt="ubc logo"
                   height="100px"
                   style={{ marginLeft: "-20px" }}
