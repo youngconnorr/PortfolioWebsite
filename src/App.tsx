@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { projects } from "./tools/Projects";
 import PFP from "./tools/linkedin-pfp.jpg";
 import UBC from "./tools/ubc-black.png";
+import PDF from "./tools/public_resume.pdf";
+
 function App() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -55,6 +57,11 @@ function App() {
                     rel="noopener noreferrer"
                   >
                     Email
+                  </a>
+                </h3>
+                <h3 className="link">
+                  <a href={PDF} target="_blank" rel="noopener noreferrer">
+                    Resume
                   </a>
                 </h3>
               </div>
@@ -129,15 +136,6 @@ function App() {
             >
               Projects
             </h2>
-            <a
-              href="mailto:youngconnorr@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ height: "23px", transform: "translateY(15px)" }}
-              className="hidden"
-            >
-              Email me for my resume!
-            </a>
           </div>
           <div className="divider"></div>
           <div className="map-projects">
