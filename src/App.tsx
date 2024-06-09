@@ -81,7 +81,6 @@ function App() {
               <section className="hidden">
                 <h2>University of British Columbia</h2>
                 <p>Degree — Computer Science</p>
-                <p>GPA — 3.85</p>
                 <img
                   src={UBC}
                   alt="ubc logo"
