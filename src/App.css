@@ -98,7 +98,7 @@ section {
 }
 
 .grades-section {
-  height: 20vh;
+  height: 80vh;
 }
 
 .vertical-line {
@@ -187,7 +187,7 @@ section {
 }
 
 .description-section {
-  display: flex;
+  width: 500px;
   padding-bottom: 20px;
 }
 
