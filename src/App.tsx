@@ -52,7 +52,7 @@ function App() {
                 </h3>
                 <h3 className="link">
                   <a
-                    href="mailto:youngconnorr@gmail.com"
+                    href="mailto:conryoung4@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
