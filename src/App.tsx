@@ -102,7 +102,14 @@ function App() {
           <section className="working-on-section hidden">
             <h2>I'm currently working on</h2>
             <section className="text-section2">
-              <h3>Path Finder</h3>
+              <a
+                className="pathfinder"
+                href="https://github.com/youngconnorr/PathFinder"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3>Path Finder</h3>
+              </a>
               <p className="hidden">
                 A web application that uses AI to help you easily plan your
                 travel itinerary!

@@ -136,6 +136,43 @@ section {
   margin-right: fit-content;
 }
 
+/* .pathfinder {
+  background-color: transparent;
+  color: black;
+  padding: 0px 10px !important;
+  border-radius: 15px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1em;
+  border: 1px solid black;
+} */
+
+.pathfinder {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+
+.pathfinder::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 330px !important;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.pathfinder:hover {
+  cursor: pointer;
+}
+
+.pathfinder:hover::after {
+  transform: scaleX(0.3) !important;
+}
+
 .name-section {
   padding-right: 27vw;
 }
@@ -378,6 +415,10 @@ section {
   .intro-img {
     width: 340px;
   }
+
+  .grades-section {
+    height: 120vh;
+  }
 }
 
 @media only screen and (max-width: 972px) {
@@ -401,7 +442,7 @@ section {
   }
 
   .grades-section {
-    height: 70vh;
+    height: 120vh;
   }
 }
 
@@ -412,6 +453,10 @@ section {
   .vertical-line {
     border: none;
     display: none;
+  }
+
+  .grades-section {
+    height: 120vh;
   }
 }
 
@@ -518,6 +563,9 @@ section {
   .grades-section {
     height: 80vh;
   }
+  .grades-section {
+    height: 120vh;
+  }
 }
 
 @media only screen and (max-width: 390px) {
@@ -527,5 +575,9 @@ section {
 
   .projects-section {
     margin-left: -10px;
+  }
+
+  .grades-section {
+    height: 120vh;
   }
 }
