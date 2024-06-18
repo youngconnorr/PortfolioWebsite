@@ -80,7 +80,6 @@ function App() {
             <section className="description-section hidden">
               <section className="hidden">
                 <h2>University of British Columbia</h2>
-                <p>Degree — Computer Science</p>
                 <img
                   src={UBC}
                   alt="ubc logo"

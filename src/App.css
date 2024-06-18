@@ -98,7 +98,7 @@ section {
 }
 
 .grades-section {
-  height: 50vh;
+  height: 20vh;
 }
 
 .vertical-line {
@@ -398,6 +398,10 @@ section {
 
   .project-image {
     display: none;
+  }
+
+  .grades-section {
+    height: 70vh;
   }
 }
 
