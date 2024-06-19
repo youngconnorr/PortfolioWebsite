@@ -2,7 +2,6 @@ import "./App.css";
 import { useEffect } from "react";
 import { projects } from "./tools/Projects";
 import PFP from "./tools/linkedin-pfp.jpg";
-import UBC from "./tools/ubc-black.png";
 import PDF from "./tools/public_resume.pdf";
 
 function App() {
