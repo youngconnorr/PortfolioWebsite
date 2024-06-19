@@ -564,7 +564,7 @@ section {
     height: 80vh;
   }
   .grades-section {
-    height: 120vh;
+    height: 110vh;
   }
 }
 
@@ -579,5 +579,19 @@ section {
 
   .grades-section {
     height: 120vh;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .intro-section-1 {
+    margin-left: 20px;
+  }
+
+  .projects-section {
+    margin-left: -10px;
+  }
+
+  .grades-section {
+    height: 150vh;
   }
 }
