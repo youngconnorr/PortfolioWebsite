@@ -568,7 +568,7 @@ section {
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 391px) {
   .intro-section-1 {
     margin-left: 20px;
   }
@@ -578,7 +578,7 @@ section {
   }
 
   .grades-section {
-    height: 120vh;
+    height: 130vh;
   }
 }
 
