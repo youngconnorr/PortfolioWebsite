@@ -114,11 +114,12 @@ function App() {
                 travel itinerary!
               </p>
               <p className="hidden">
-                Utilizing the OpenAI API, Travel Planner generates customized
+                Utilizing the OpenAI API, PathFinder generates customized
                 itineraries based on your destination and the month of your
                 travel. Get recommendations on places to visit, restaurants to
                 dine at, and clothing to pack, all curated for the specific
-                month you're traveling.
+                month you're traveling. The tech stack I am using to build it is
+                React and Django, using RESTful APIs.
               </p>
             </section>
           </section>
