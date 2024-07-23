@@ -12,10 +12,9 @@ function App() {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
           // console.log(entry + "added to show");
+        } else {
+          entry.target.classList.remove("show");
         }
-        //  else {
-        //   entry.target.classList.remove("show");
-        // }
       });
     });
 
@@ -107,19 +106,19 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h3>Path Finder</h3>
+                <h3>Stock Scout</h3>
               </a>
               <p className="hidden">
-                A web application that uses AI to help you easily plan your
-                travel itinerary!
+                Monitoring real-time stock market data, providing users with
+                accurate information to make informed investments.
               </p>
               <p className="hidden">
-                Utilizing the OpenAI API, PathFinder generates customized
-                itineraries based on your destination and the month of your
-                travel. Get recommendations on places to visit, restaurants to
-                dine at, and clothing to pack, all curated for the specific
-                month you're traveling. The tech stack I am using to build it is
-                React and Django, using RESTful APIs.
+                Using YFinance API, I am analyzing 1000+ stocks with{" "}
+                <b>Python</b> and <b> Pandas</b> to create an application to
+                retrieve intricate information and create a user portfolio. I am
+                also learning the software development lifecycle <b>(SDLC)</b>{" "}
+                and completing each step of the process using <b>PyTest</b> and{" "}
+                <b>PyTest-cov</b>, <b>Github Action</b>, and <b>Docker</b>!
               </p>
             </section>
           </section>
@@ -154,53 +153,69 @@ function App() {
           <div className="divider"></div>
           <div className="map-projects">
             <div>
-              {projects.map((project) => (
-                <div>
-                  <section className="single-project">
-                    <div key={project.id}>
-                      <h3 className="hidden project-name">{project.name}</h3>
-                      <div className="description-project hidden">
-                        <div>
-                          <div className=" hidden">
-                            <b
-                              className="check-out-button project-name"
-                              onClick={() =>
-                                window.open(project.link, "_blank")
-                              }
-                              style={{ cursor: "pointer" }}
-                            >
-                              Check out project
-                            </b>
+              {projects
+                .map((project) => (
+                  <div>
+                    <section className="single-project">
+                      <div key={project.id}>
+                        <h3 className="hidden project-name">{project.name}</h3>
+                        <div className="description-project hidden">
+                          <div>
+                            <div className=" hidden">
+                              <b
+                                className="check-out-button project-name"
+                                onClick={() =>
+                                  window.open(project.link, "_blank")
+                                }
+                                style={{ cursor: "pointer" }}
+                              >
+                                Check out project
+                              </b>
+                            </div>
+                            <p className="text-section hidden">
+                              {project.description}
+                            </p>
                           </div>
-                          <p className="text-section hidden">
-                            {project.description}
-                          </p>
+                          {project.id === 4 ? (
+                            <iframe
+                              width="420"
+                              height="315"
+                              src="https://www.youtube.com/embed/GLxtQhVK0mY"
+                              title="PathFinder Tutorial Video"
+                              frameBorder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerPolicy="strict-origin-when-cross-origin"
+                              allowFullScreen
+                            ></iframe>
+                          ) : (
+                            <img
+                              className="project-image img-hidden"
+                              id="project-picture"
+                              src={project.img}
+                              style={{
+                                width: `${project.imgWidth}`,
+                                height: `${project.imgHeight}`,
+                              }}
+                              alt=""
+                            />
+                          )}
                         </div>
-                        <img
-                          className="project-image img-hidden"
-                          id="project-picture"
-                          src={project.img}
-                          style={{
-                            width: `${project.imgWidth}`,
-                            height: `${project.imgHeight}`,
-                          }}
-                          alt=""
-                        />
-                      </div>
-                      {/* <a
+                        {/* <a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       >
                       <b>Check out project</b>
                     </a> */}
-                    </div>
-                  </section>
-                  {project.id === projects.length ? null : (
-                    <div className="vertical-line"></div>
-                  )}
-                </div>
-              ))}
+                      </div>
+                    </section>
+                    {project.id + projects.length - 1 ===
+                    projects.length ? null : (
+                      <div className="vertical-line"></div>
+                    )}
+                  </div>
+                ))
+                .reverse()}
             </div>
           </div>
         </div>

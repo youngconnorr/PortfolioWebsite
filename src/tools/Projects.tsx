@@ -16,13 +16,13 @@ interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    name: "MindFit",
+    name: "Photography Portfolio",
     description:
-      "Programmed an interactive React app with omnichannel features to integrate personalized exercise and meditation into students’ schedules. Led a team of new developers, mentoring them in React and using Firebase for user preferences, login streaks, and authentication. Achieved an honorable mention at the YouCode 2024 Hackathon, competing against 200 participants.",
-    img: mindfit,
+      "Designed a responsive front-end web application with React and CSS for optimal display across various screen sizes, integrated client-side routing with React Router for seamless navigation, and implemented a JSON storage database to optimize data management efficiency and enhance storage flexibility.",
+    img: photoWebsite,
     imgWidth: "35vw",
     imgHeight: "30vh",
-    link: "https://devpost.com/software/mindfit-m9gb38",
+    link: "https://youngconnorr.github.io/",
   },
   {
     id: 2,
@@ -36,22 +36,22 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    name: "Photography Portfolio",
+    name: "MindFit",
     description:
-      "Designed a responsive front-end web application with React and CSS for optimal display across various screen sizes, integrated client-side routing with React Router for seamless navigation, and implemented a JSON storage database to optimize data management efficiency and enhance storage flexibility.",
-    img: photoWebsite,
+      "Programmed an interactive React app with omnichannel features to integrate personalized exercise and meditation into students’ schedules. Led a team of new developers, mentoring them in React and using Firebase for user preferences, login streaks, and authentication. Achieved an honorable mention at the YouCode 2024 Hackathon, competing against 200 participants.",
+    img: mindfit,
     imgWidth: "35vw",
     imgHeight: "30vh",
-    link: "https://youngconnorr.github.io/",
+    link: "https://devpost.com/software/mindfit-m9gb38",
   },
-  // {
-  //   id: 4,
-  //   name: "Valentines",
-  //   description:
-  //     "Made a website for valentine's day using Javascript, HTML and CSS.",
-  //   img: valentineDays,
-  //   imgWidth: "450px",
-  //   imgHeight: "200px",
-  //   link: "https://youngconnorr.github.io/Valentines-day/",
-  // },
+  {
+    id: 4,
+    name: "PathFinder",
+    description:
+      "Developed an intelligent itinerary planning web application utilizing the OpenAI API for personalized travel plans across 4000+ cities. Engineered a PostgreSQL Realtime Database with Django, incorporating a RESTful API and CRUD operations for seamless itinerary management. Designed a responsive UI with React, enhancing user experience through advanced routing, state management, and CSS. Optimized data handling with a streamlined algorithm for 90% faster JSON parsing, improving data storage and retrieval efficiency.",
+    img: mindfit,
+    imgWidth: "35vw",
+    imgHeight: "30vh",
+    link: "https://github.com/youngconnorr/PathFinder",
+  },
 ];
