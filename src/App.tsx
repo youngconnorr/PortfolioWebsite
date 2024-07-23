@@ -12,9 +12,10 @@ function App() {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
           // console.log(entry + "added to show");
-        } else {
-          entry.target.classList.remove("show");
         }
+        //  else {
+        //   entry.target.classList.remove("show");
+        // }
       });
     });
 
