@@ -1,7 +1,7 @@
 import "./App.css";
 import { useEffect } from "react";
 import { projects } from "./tools/Projects";
-import PFP from "./tools/linkedin-pfp.jpg";
+import PFP from "./tools/DSCF2156.jpeg";
 import PDF from "./tools/public_resume.pdf";
 
 function App() {
