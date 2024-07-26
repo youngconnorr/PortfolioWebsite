@@ -103,7 +103,7 @@ function App() {
             <section className="text-section2">
               <a
                 className="pathfinder"
-                href="https://github.com/youngconnorr/PathFinder"
+                href="https://github.com/youngconnorr/python-stock-analyzer/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
