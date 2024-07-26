@@ -3,7 +3,7 @@ import liftify from "./liftify.png";
 import photoWebsite from "./photoWebsite.png";
 // import valentineDays from "./valentinesDay.png";
 
-interface Project {
+export interface Project {
   id: number;
   name: string;
   description: string;
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     img: photoWebsite,
     imgWidth: "35vw",
     imgHeight: "30vh",
-    link: "https://youngconnorr.github.io/",
+    link: "https://cyoungphotos.netlify.app",
   },
   {
     id: 2,

@@ -189,7 +189,21 @@ function App() {
                               referrerPolicy="strict-origin-when-cross-origin"
                               allowFullScreen
                             ></iframe>
-                          ) : (
+                          ) : null}
+                          {project.id === 2 ? (
+                            <iframe
+                              className="project-image img-hidden"
+                              width="420"
+                              height="315"
+                              src="https://www.youtube.com/embed/vRYXmYW1e4c"
+                              title="Liftify Tutorial Video"
+                              frameBorder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerPolicy="strict-origin-when-cross-origin"
+                              allowFullScreen
+                            ></iframe>
+                          ) : null}
+                          {project.id !== 2 && project.id !== 4 ? (
                             <img
                               className="project-image img-hidden"
                               id="project-picture"
@@ -200,7 +214,7 @@ function App() {
                               }}
                               alt=""
                             />
-                          )}
+                          ) : null}
                         </div>
                         {/* <a
                       href={project.link}
@@ -209,6 +223,8 @@ function App() {
                       >
                       <b>Check out project</b>
                     </a> */}
+
+                        {/*  */}
                       </div>
                     </section>
                     {project.id + projects.length - 1 ===
