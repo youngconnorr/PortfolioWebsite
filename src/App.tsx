@@ -90,7 +90,7 @@ function App() {
                 internships!
               </p>
               <p>
-                I enjoy connectioning with people, exploring new technology, and
+                I enjoy connecting with people, exploring new technology, and
                 developing cool projects with a particular interest in fullstack
                 development. Outside of tech - you can find me competing in
                 sports such as volleyball and bouldering, hiking up mountains
