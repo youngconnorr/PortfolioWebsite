@@ -1,3 +1,13 @@
+/*
+
+Application updates needed:
+- Make a toggle showing experience and projects
+- Make a panel show up when you hover over the interest buttons
+- Fix phone responsiveness 
+- Make a go to the top button
+
+*/
+
 import "./App.css";
 import { useEffect } from "react";
 import { projects } from "./tools/Projects";
@@ -5,6 +15,8 @@ import PFP from "./tools/DSCF2156.jpeg";
 import PDF from "./tools/public_resume.pdf";
 
 function App() {
+  // const [showExperience, setShowExperience] = useState<boolean>(true);
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -102,24 +114,22 @@ function App() {
             <h2>I'm currently working on</h2>
             <section className="text-section2">
               <a
-                className="pathfinder"
-                href="https://github.com/youngconnorr/python-stock-analyzer/"
+                className="working-on-project"
+                href="https://devpost.com/software/advizr"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h3>Stock Scout</h3>
+                <h3>Advizr</h3>
               </a>
               <p className="hidden">
-                Monitoring real-time stock market data, providing users with
-                accurate information to make informed investments.
+                A lightweight AI academic advisor for university students
+                developed through using Cohere's LLM for retrieval augmented
+                generation (RAG). Allowing for deterministic responses, so it
+                always points students in the right direction.
               </p>
               <p className="hidden">
-                Using YFinance API, I am analyzing 1000+ stocks with{" "}
-                <b>Python</b> and <b> Pandas</b> to create an application to
-                retrieve intricate information and create a user portfolio. I am
-                also learning the software development lifecycle <b>(SDLC)</b>{" "}
-                and completing each step of the process using <b>PyTest</b> and{" "}
-                <b>PyTest-cov</b>, <b>Github Action</b>, and <b>Docker</b>!
+                Created during Hack the North 2024 and in the process of being
+                fully developed by me and my team.
               </p>
             </section>
           </section>
@@ -140,6 +150,11 @@ function App() {
         </div>
       </section>
       <div className="spacer layer2"></div>
+
+      {/* <button onClick={() => setShowExperience(!showExperience)}>
+        Projects
+      </button>
+      <button>Experience</button> */}
 
       <section className="dark-green font-white ">
         <div className="projects-section">
@@ -216,15 +231,6 @@ function App() {
                             />
                           ) : null}
                         </div>
-                        {/* <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >
-                      <b>Check out project</b>
-                    </a> */}
-
-                        {/*  */}
                       </div>
                     </section>
                     {project.id + projects.length - 1 ===

@@ -1,6 +1,7 @@
 import mindfit from "./mindfit.png";
 import liftify from "./liftify.png";
 import photoWebsite from "./photoWebsite.png";
+import stockAnalyzer from "./stock_analyzer_photo.png";
 // import valentineDays from "./valentinesDay.png";
 
 export interface Project {
@@ -38,7 +39,7 @@ export const projects: Project[] = [
     id: 3,
     name: "MindFit",
     description:
-      "Programmed an interactive React app with omnichannel features to integrate personalized exercise and meditation into students’ schedules. Led a team of new developers, mentoring them in React and using Firebase for user preferences, login streaks, and authentication. Achieved an honorable mention at the YouCode 2024 Hackathon, competing against 200 participants.",
+      "Programmed an interactive React app with omnichannel features to integrate personalized exercise and meditation into students’ schedules. Led a team of new developers, mentoring them in React and using Firebase for user preferences, login streaks, and authentication.Achieved an honorable mention at the YouCode 2024 Hackathon, competing against 200 participants.",
     img: mindfit,
     imgWidth: "35vw",
     imgHeight: "30vh",
@@ -53,5 +54,15 @@ export const projects: Project[] = [
     imgWidth: "35vw",
     imgHeight: "30vh",
     link: "https://github.com/youngconnorr/PathFinder",
+  },
+  {
+    id: 5,
+    name: "Stock Scout",
+    description:
+      "Designed an object-oriented Python app to monitor real-time stock market data, providing users with accurate information to make informed investment decisions. Built with python, pandas, and Yahoo Finance API, visualizing stock value through matplotlib. Focused on implementing CI/CD pipelines through GitHub Actions and Ubuntu and following a SDLC with pytest to streamline and automate the development and deployment processes. Achieved 100% code coverage in PyTest",
+    img: stockAnalyzer,
+    imgWidth: "35vw",
+    imgHeight: "30vh",
+    link: "https://github.com/youngconnorr/python-stock-analyzer",
   },
 ];

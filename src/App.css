@@ -136,7 +136,7 @@ section {
   margin-right: fit-content;
 }
 
-/* .pathfinder {
+/* .working-on-project {
   background-color: transparent;
   color: black;
   padding: 0px 10px !important;
@@ -146,18 +146,18 @@ section {
   border: 1px solid black;
 } */
 
-.pathfinder {
+.working-on-project {
   position: relative;
   color: black;
   text-decoration: none;
 }
 
-.pathfinder::after {
+.working-on-project::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 330px !important;
+  width: 180px !important;
   height: 2px;
   background-color: black;
   transform: scaleX(0);
@@ -165,11 +165,11 @@ section {
   transition: transform 0.3s ease;
 }
 
-.pathfinder:hover {
+.working-on-project:hover {
   cursor: pointer;
 }
 
-.pathfinder:hover::after {
+.working-on-project:hover::after {
   transform: scaleX(0.3) !important;
 }
 
@@ -354,6 +354,10 @@ section {
   display: grid;
   justify-content: center;
 }
+
+/* .full-stack-intersted:hover {
+  
+} */
 
 .img-hidden {
   opacity: 0;
