@@ -10,7 +10,7 @@ Application updates needed:
 
 import "./App.css";
 import { useEffect } from "react";
-import { projects } from "./tools/ProjectJSON";
+import { projectJSON } from "./tools/ProjectJSON";
 import PFP from "./tools/DSCF2156.jpeg";
 import PDF from "./tools/public_resume.pdf";
 
@@ -169,7 +169,7 @@ function App() {
           <div className="divider"></div>
           <div className="map-projects">
             <div>
-              {projects
+              {projectJSON
                 .map((project) => (
                   <div>
                     <section className="single-project">
@@ -233,8 +233,8 @@ function App() {
                         </div>
                       </div>
                     </section>
-                    {project.id + projects.length - 1 ===
-                    projects.length ? null : (
+                    {project.id + projectJSON.length - 1 ===
+                    projectJSON.length ? null : (
                       <div className="vertical-line"></div>
                     )}
                   </div>
