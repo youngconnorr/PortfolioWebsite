@@ -115,10 +115,10 @@ const Projects = () => {
                   </div>
                 </div>
               </section>
-              {project.id + projectJSON.length - 1 ===
+              {/* {project.id + projectJSON.length - 1 ===
               projectJSON.length ? null : (
                 <div className="vertical-line"></div>
-              )}
+              )} */}
             </div>
           ))
           .reverse()}
