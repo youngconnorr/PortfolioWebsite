@@ -28,12 +28,6 @@ const About = () => {
         <section className="school-section">
           <div className="me-section hidden">
             <h2>Hi I'm Connor!</h2>
-            <p>I'm a software engineer from Calgary, Alberta.</p>
-            <p>
-              I’m a third year student at the University of British Columbia
-              studying computer science. Looking for software engineer
-              internships!
-            </p>
             <p>
               I enjoy connecting with people, exploring new technology, and
               developing cool projects with a particular interest in fullstack
