@@ -1,0 +1,57 @@
+@import url("./components/profile/profile.css");
+@import url("./components/projects/project.css");
+@import url("./components/navbar/navbar.css");
+@import url("./components/about/about.css");
+@import url("./components/experience/experience.css");
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.hidden2 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.hidden3 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 1s;
+}
+
+.hidden4 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+
+  .hidden2 {
+    transition: none;
+  }
+
+  .hidden3 {
+    transition: none;
+  }
+
+  .hidden4 {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}

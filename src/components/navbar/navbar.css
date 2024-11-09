@@ -1,0 +1,18 @@
+.go-back {
+  margin-left: 65px;
+  margin-top: 5px;
+}
+
+.link-go-back {
+  display: flex;
+  transition: 0.2s ease-in-out;
+}
+
+.back-button-arrow {
+  margin-right: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.link-go-back:hover .back-button-arrow {
+  transform: translateX(-30%);
+}

@@ -10,7 +10,7 @@ Application updates needed:
 
 import "./App.css";
 import { useEffect } from "react";
-import { projects } from "./tools/Projects";
+import { projects } from "./tools/ProjectJSON";
 import PFP from "./tools/DSCF2156.jpeg";
 import PDF from "./tools/public_resume.pdf";
 

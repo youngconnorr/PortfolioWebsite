@@ -1,0 +1,49 @@
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.school-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.me-section {
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 33%;
+  transition: 0.2s ease;
+}
+
+.me-section:hover {
+  background-color: #d0f4de;
+}
+
+.currently-working-on-section {
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 10px;
+  width: 33%;
+  transition: 0.2s ease;
+  margin-right: 10px;
+}
+
+.currently-working-on-section:hover {
+  background-color: #a0c4ff;
+}
+
+.interests-section {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.interest-list {
+  display: flex;
+}
