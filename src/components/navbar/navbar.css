@@ -16,3 +16,10 @@
 .link-go-back:hover .back-button-arrow {
   transform: translateX(-30%);
 }
+
+@media (max-width: 480px) {
+  .go-back {
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+}

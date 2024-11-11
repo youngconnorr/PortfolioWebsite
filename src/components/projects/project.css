@@ -46,6 +46,19 @@ h3 {
   font-weight: 100;
 }
 
+.check-out-button {
+  border-bottom: 1px solid black;
+  padding: 5px;
+  transition: 0.5s ease;
+}
+
+.check-out-button:hover {
+  background-color: black;
+  border-color: black;
+  border-radius: 12px;
+  color: white;
+}
+
 .project-title {
   display: flex;
   justify-content: center;
@@ -62,7 +75,7 @@ h3 {
 }
 
 .single-project:hover {
-  background-color: #e3d5ca;
+  background-color: #a9d2dfd2;
   transition: background-color 0.2s ease;
 }
 
@@ -75,4 +88,74 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+/* Tablet and mobile styling */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .single-project {
+    padding: 20px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .project-parent-div {
+    width: 100%;
+  }
+
+  .map-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .description-project {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile styling */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .single-project {
+    padding: 15px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .project-parent-div {
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .description-project {
+    font-size: 0.9rem;
+  }
+
+  .project-image {
+    display: none;
+  }
 }
