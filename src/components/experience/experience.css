@@ -36,3 +36,27 @@
   height: 50px;
   background-color: rgba(128, 128, 128, 0.404);
 }
+
+@media (max-width: 480px) {
+  .single-job {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: -20px;
+  }
+
+  .role-title {
+    display: block;
+  }
+
+  .role {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .employer {
+    padding: 0px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+}
