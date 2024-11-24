@@ -160,7 +160,7 @@ h3 {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1800px) {
   .project-image {
     display: none;
   }
