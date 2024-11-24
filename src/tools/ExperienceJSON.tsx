@@ -8,7 +8,7 @@ export interface Experience {
 export const ExperienceJSON: Experience[] = [
   {
     id: 1,
-    role: "Software Engineer",
+    role: "Software Developer",
     employer: "UBC Learning Centre",
     description:
       "Developed accessible educational applications for 3500+ students and 20+ professors, including interactive JavaScript learning tools with SCORM API integration, such as a quiz-integrated crossword puzzle with detailed feedback. Authored a comprehensive SCORM guide for UBC Learning Centre, collaborated with professors to digitize quizzes, and created intuitive software for non-technical users to enhance course engagement.",
