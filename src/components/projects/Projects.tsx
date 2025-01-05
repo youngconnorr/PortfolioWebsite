@@ -56,7 +56,7 @@ const Projects = () => {
             <div key={project.id}>
               <section
                 className={`single-project ${
-                  project.id % 2 === 0 ? "hidden2" : "hidden"
+                  project.id % 2 === 0 ? "hidden" : "hidden2"
                 }`}
               >
                 <div key={project.id} className="project-parent-div">

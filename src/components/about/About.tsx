@@ -38,25 +38,25 @@ const About = () => {
           </div>
           <div className="currently-working-on-section hidden2">
             <h2>
-              I'm currently working on <b>Advizr</b>
+              I'm currently working on <b>Moodify</b>
             </h2>
             <a
               className="working-on-project"
-              href="https://devpost.com/software/advizr"
+              href="https://devpost.com/software/moodify-e7go5a"
               target="_blank"
               rel="noopener noreferrer"
             >
               <h3>Check out Devpost</h3>
             </a>
             <p className="">
-              A lightweight AI academic advisor for university students
-              developed through using Cohere's LLM for retrieval augmented
-              generation (RAG). Allowing for deterministic responses, so it
-              always points students in the right direction.
+              An app that curates Spotify playlists by analyzing mood, photos,
+              weather, and time, leveraging OpenAI and Spotify APIs to recommend
+              music based on user input. Engineered with a dynamic React Native
+              UI with Expo to create an immersive user experience!
             </p>
             <p className="">
-              Created during Hack the North 2024 and in the process of being
-              fully developed by me and my team.
+              Created during NwHacks 2025 and in the process of being fully
+              developed by me and my team.
             </p>
           </div>
         </section>
