@@ -37,6 +37,12 @@
   background-color: rgba(128, 128, 128, 0.404);
 }
 
+.languages {
+  margin-top: -20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 480px) {
   .single-job {
     width: 90%;
@@ -58,5 +64,8 @@
     padding: 0px;
     margin-bottom: 30px;
     margin-top: 0px;
+  }
+
+  .languages {
   }
 }

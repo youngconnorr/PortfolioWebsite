@@ -32,6 +32,7 @@ const Experience = () => {
               <h2 className="role">{job.employer} </h2>
               <h3 className="employer"> — {job.role}</h3>
             </div>
+            <p className="languages">{job.languages}</p>
             <h3 className="description">{job.description}</h3>
             {job.id === ExperienceJSON.length ? null : (
               <div className="vertical-line"></div>
