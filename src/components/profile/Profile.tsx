@@ -1,4 +1,4 @@
-import PFP from "../../tools/linkedin-pfp.jpg";
+import PFP from "../../tools/pfp_photo.png";
 import PDF from "../../tools/public_resume.pdf";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -91,11 +91,14 @@ const Profile = () => {
               </div>
               <div className="profile-page-about-me">
                 <h2>Hi I'm Connor!</h2>
-                <p>I'm a software engineer from Calgary, Alberta.</p>
+                <p>I'm a software engineer from Vancouver, BC.</p>
                 <p>
                   I’m a third year student at the University of British Columbia
-                  studying computer science. Looking for software engineer
-                  internships!
+                  studying computer science.
+                </p>
+                <p>
+                  Passionate about making software that creates a lasting impact
+                  of people.
                 </p>
               </div>
             </div>

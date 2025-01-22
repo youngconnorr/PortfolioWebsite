@@ -2,6 +2,7 @@ import mindfit from "./mindfit.png";
 import liftify from "./liftify.png";
 import photoWebsite from "./photoWebsite.png";
 import stockAnalyzer from "./stock_analyzer_photo.png";
+import advizrPhoto from "./advizr-photo.png";
 // import valentineDays from "./valentinesDay.png";
 
 export interface Project {
@@ -64,5 +65,15 @@ export const projectJSON: Project[] = [
     imgWidth: "35vw",
     imgHeight: "30vh",
     link: "https://github.com/youngconnorr/python-stock-analyzer",
+  },
+  {
+    id: 6,
+    name: "Advizr",
+    description:
+      "A lightweight AI academic advisor for university students developed through using Cohere's LLM for retrieval augmented generation (RAG). Allowing for deterministic responses, so it always points students in the right direction. Created during Hack the North 2024 and in the process of being fully developed by me and my team.",
+    img: advizrPhoto,
+    imgWidth: "20vw",
+    imgHeight: "30vh",
+    link: "https://devpost.com/software/advizr",
   },
 ];
