@@ -30,7 +30,7 @@ const Experience = () => {
           <div key={job.id} className="single-job hidden">
             <div className="role-title">
               <h2 className="role">{job.employer} </h2>
-              {/* <h3 className="employer"> — {job.role}</h3> */}
+              <h3 className="employer"> — {job.role}</h3>
             </div>
             <p className="languages">Software: {job.languages}</p>
             <h3 className="description">{job.description}</h3>
