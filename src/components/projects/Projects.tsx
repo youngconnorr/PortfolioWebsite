@@ -1,41 +1,51 @@
 import { projectJSON } from "../../tools/ProjectJSON";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const Projects = () => {
-  // const colorBox = document.querySelector(".single-project") as HTMLElement;
-  // const colors = [
-  //   "#C6DEF1",
-  //   "#FAEDCB",
-  //   "#C9E4DE",
-  //   "#F7D9C4",
-  //   "#F2C6DE",
-  //   "#DBCDF0",
-  // ];
+  const projectRefs = useRef<(HTMLElement | null)[]>([]);
 
-  // if (colorBox) {
-  //   colorBox.addEventListener("mouseenter", () => {
-  //     const randomColor = colors[Math.floor(Math.random() * colors.length)];
-  //     colorBox.style.backgroundColor = randomColor;
-  //   });
-  // }
+  //prettier-ignore
+  const colors = [
+      "#C6DEF1", "#C9E4DE", "#F2C6DE", "#DBCDF0", // Original cool pastels
+      "#AFCBFA", "#BEE8D9", "#E8B3C9", "#CABDEA", // Light blues, greens, pinks, purples
+      // "#B8D8F2", "#D2ECE2", "#F5AFC4", "#D8C4F2", // More blues, teals, muted pinks
+      "#98C1E6", "#A8D5BA", "#EBBAD3", "#C0AFE5", // Soft blue, green, pink, and purple mix
+      "#87C5A4", "#DA92A8", "#A897D6", // Deeper blues, teals, pinks, and purples
+      "#B4D4F2", "#B6E2DA", "#D3B6E2", "#E4B8D9", "#C4B9E8", "#9BC7E8" // Final subtle shades
+  ];
 
-  // if (colorBox) {
-  //   colorBox.addEventListener("mouseleave", () => {
-  //     colorBox.style.backgroundColor = "";
-  //   });
-  // }
+  useEffect(() => {
+    // Apply random background colors to each project
+    projectRefs.current.forEach((box) => {
+      if (!box) return; // Ensure box exists
+
+      box.style.backgroundColor = "#FFFFFF";
+
+      const handleMouseEnter = () => {
+        box.style.backgroundColor =
+          colors[Math.floor(Math.random() * colors.length)];
+      };
+
+      const handleMouseLeave = () => {
+        box.style.backgroundColor = "#FFFFFF"; // Restore original color
+      };
+
+      box.addEventListener("mouseenter", handleMouseEnter);
+      box.addEventListener("mouseleave", handleMouseLeave);
+
+      return () => {
+        box.removeEventListener("mouseenter", handleMouseEnter);
+        box.removeEventListener("mouseleave", handleMouseLeave);
+      };
+    });
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        // console.log(entry);
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
-          // console.log(entry + "added to show");
         }
-        //  else {
-        //   entry.target.classList.remove("show");
-        // }
       });
     });
 
@@ -43,82 +53,66 @@ const Projects = () => {
       ".hidden, .img-hidden, .hidden2, .hidden3, .hidden4"
     );
     hiddenElements.forEach((el) => observer.observe(el));
+
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
   }, []);
 
   return (
-    <section className=" ">
+    <section>
       <div>
         <h1 className="project-title hidden4">Projects</h1>
       </div>
       <div className="map-projects">
         {projectJSON
-          .map((project) => (
+          .map((project, index) => (
             <div key={project.id}>
               <section
+                ref={(el) => (projectRefs.current[index] = el)}
                 className={`single-project ${
                   project.id % 2 === 0 ? "hidden" : "hidden2"
                 }`}
               >
-                <div key={project.id} className="project-parent-div">
-                  <h2 className=" project-name">{project.name}</h2>
-                  <div className="description-project ">
+                <div className="project-parent-div">
+                  <h2 className="project-name">{project.name}</h2>
+                  <div className="description-project">
                     <div>
-                      <div className=" ">
-                        <b
-                          className="check-out-button project-name"
-                          onClick={() => window.open(project.link, "_blank")}
-                          style={{ cursor: "pointer" }}
-                        >
-                          Check out project
-                        </b>
-                      </div>
-                      <p className="text-section ">{project.description}</p>
+                      <b
+                        className="check-out-button project-name"
+                        onClick={() => window.open(project.link, "_blank")}
+                        style={{ cursor: "pointer" }}
+                      >
+                        Check out project
+                      </b>
+                      <p className="text-section">{project.description}</p>
                     </div>
                     {project.id === 4 ? (
                       <iframe
-                        className="project-image img-"
-                        width="420"
-                        height="315"
+                        width="300"
+                        height="200"
                         src="https://www.youtube.com/embed/GLxtQhVK0mY"
-                        title="PathFinder Tutorial Video"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                      ></iframe>
-                    ) : null}
-                    {project.id === 2 ? (
+                      />
+                    ) : project.id === 2 ? (
                       <iframe
-                        className="project-image img-"
-                        width="420"
-                        height="315"
+                        width="300"
+                        height="200"
                         src="https://www.youtube.com/embed/vRYXmYW1e4c"
-                        title="Liftify Tutorial Video"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                      ></iframe>
-                    ) : null}
-                    {project.id !== 2 && project.id !== 4 ? (
+                      />
+                    ) : (
                       <img
                         className="project-image img-"
-                        id="project-picture"
                         src={project.img}
                         style={{
-                          width: `${project.imgWidth}`,
-                          height: `${project.imgHeight}`,
+                          width: project.imgWidth,
+                          height: project.imgHeight,
                         }}
                         alt=""
                       />
-                    ) : null}
+                    )}
                   </div>
                 </div>
               </section>
-              {/* {project.id + projectJSON.length - 1 ===
-              projectJSON.length ? null : (
-                <div className="vertical-line"></div>
-              )} */}
             </div>
           ))
           .reverse()}

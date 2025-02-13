@@ -67,9 +67,12 @@ h3 {
 .single-project {
   border: 1px solid white;
   border-radius: 15px;
-  padding: 50px;
+  padding: 55px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 10px;
-  height: 500px;
+  padding-bottom: 50px;
+  height: 380px;
   margin-bottom: 50px;
   transition: background-color 0.3s ease;
 }

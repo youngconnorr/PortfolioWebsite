@@ -22,18 +22,18 @@ export const projectJSON: Project[] = [
     description:
       "Designed a responsive front-end web application with React and CSS to display my personal photography portfolio. Implementing simple algorithms such as a circular array for interactive image cycling.",
     img: photoWebsite,
-    imgWidth: "35vw",
-    imgHeight: "30vh",
+    imgWidth: "26vw",
+    imgHeight: "28vh",
     link: "https://cyoungphotos.netlify.app",
   },
   {
     id: 2,
     name: "Liftify",
     description:
-      "Assembled a Java application to log exercises across various workout categories, enhancing user convenience and data organization. Constructed a dynamic GUI using Java Swing to optimize user interactions and overall usability.",
+      "Assembled a Java application to log exercises across various workout categories, streamlining progress tracking. Constructed a dynamic GUI using Java Swing to optimize user interactions and overall usability.",
     img: liftify,
-    imgWidth: "30vw",
-    imgHeight: "35vh",
+    imgWidth: "25w",
+    imgHeight: "20vh",
     link: "https://github.com/youngconnorr/Liftify",
   },
   {
@@ -42,7 +42,7 @@ export const projectJSON: Project[] = [
     description:
       "Programmed an interactive React app with omnichannel features to integrate personalized exercise and meditation into students’ schedules. Project from YouCode 2024 hackathon.",
     img: mindfit,
-    imgWidth: "35vw",
+    imgWidth: "30vw",
     imgHeight: "30vh",
     link: "https://devpost.com/software/mindfit-m9gb38",
   },
@@ -62,8 +62,8 @@ export const projectJSON: Project[] = [
     description:
       "Designed an object-oriented Python app to monitor real-time stock market data, providing users with accurate information to make informed investment decisions. Built with python, pandas, and Yahoo Finance API, visualizing stock value through matplotlib.",
     img: stockAnalyzer,
-    imgWidth: "35vw",
-    imgHeight: "30vh",
+    imgWidth: "25vw",
+    imgHeight: "25vh",
     link: "https://github.com/youngconnorr/python-stock-analyzer",
   },
   {
@@ -72,8 +72,8 @@ export const projectJSON: Project[] = [
     description:
       "A lightweight AI academic advisor for university students developed through using Cohere's LLM for retrieval augmented generation (RAG). Allowing for deterministic responses, so it always points students in the right direction. Created during Hack the North 2024 and in the process of being fully developed by me and my team.",
     img: advizrPhoto,
-    imgWidth: "20vw",
-    imgHeight: "30vh",
+    imgWidth: "15vw",
+    imgHeight: "20vh",
     link: "https://devpost.com/software/advizr",
   },
 ];
