@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { ExperienceJSON } from "../../tools/ExperienceJSON";
 
 const Experience = () => {
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
