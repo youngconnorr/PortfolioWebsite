@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { ExperienceJSON } from "../../tools/ExperienceJSON";
 
 const Experience = () => {
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -33,7 +32,7 @@ const Experience = () => {
               <h2 className="role">{job.employer} </h2>
               <h3 className="employer"> — {job.role}</h3>
             </div>
-            <p className="languages">Software: {job.languages}</p>
+            <p className="languages">{job.languages}</p>
             <h3 className="description">{job.description}</h3>
             {job.id === ExperienceJSON.length ? null : (
               <div className="vertical-line"></div>
