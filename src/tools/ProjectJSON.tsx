@@ -4,6 +4,7 @@ import photoWebsite from "./photoWebsite.png";
 import stockAnalyzer from "./stock_analyzer_photo.png";
 import advizrPhoto from "./advizr-photo.png";
 // import valentineDays from "./valentinesDay.png";
+import moodifyPhoto from "./moodify-photo.png";
 
 export interface Project {
   id: number;
@@ -75,5 +76,15 @@ export const projectJSON: Project[] = [
     imgWidth: "15vw",
     imgHeight: "20vh",
     link: "https://devpost.com/software/advizr",
+  },
+  {
+    id: 7,
+    name: "Moodify",
+    description:
+      "An app that curates Spotify playlists by analyzing mood, photos, weather, and time, leveraging OpenAI and Spotify APIs to recommend music based on user input. Engineered with a dynamic React Native UI with Expo to create an immersive user experience!",
+    img: moodifyPhoto,
+    imgWidth: "15vw",
+    imgHeight: "23vh",
+    link: "hhttps://devpost.com/software/moodify-e7go5a",
   },
 ];

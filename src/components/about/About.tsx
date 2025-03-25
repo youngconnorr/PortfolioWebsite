@@ -38,26 +38,27 @@ const About = () => {
           </div>
           <div className="currently-working-on-section hidden2">
             <h2>
-              I'm currently working on <b>Moodify</b>
+              I'm currently working on <b>MarketMirror</b>
             </h2>
-            <a
+            {/* <a
               className="working-on-project"
               href="https://devpost.com/software/moodify-e7go5a"
               target="_blank"
               rel="noopener noreferrer"
             >
               <h3>Check out Devpost</h3>
-            </a>
+            </a> */}
             <p className="">
-              An app that curates Spotify playlists by analyzing mood, photos,
-              weather, and time, leveraging OpenAI and Spotify APIs to recommend
-              music based on user input. Engineered with a dynamic React Native
-              UI with Expo to create an immersive user experience!
+              An investment portfolio tracking app to display gains or losses
+              based on the buy price and current market price. The backend built
+              using Elixir, Phoenix, and GraphQL, with subscriptions enabling
+              real-time stock price updates. A modern UI created using React
+              with TypeScript and CSS, supporting over 5,000 users.
             </p>
-            <p className="">
+            {/* <p className="">
               Created during NwHacks 2025 and in the process of being fully
               developed by me and my team.
-            </p>
+            </p> */}
           </div>
         </section>
         {/* <section className="interests-section">

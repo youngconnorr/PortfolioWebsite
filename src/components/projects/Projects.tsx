@@ -71,7 +71,7 @@ const Projects = () => {
               <section
                 ref={(el) => (projectRefs.current[index] = el)}
                 className={`single-project ${
-                  project.id % 2 === 0 ? "hidden" : "hidden2"
+                  project.id % 2 === 1 ? "hidden" : "hidden2"
                 }`}
               >
                 <div className="project-parent-div">
