@@ -98,7 +98,7 @@ const Profile = () => {
                 </p>
                 <p>
                   Passionate about making software that creates a lasting impact
-                  of people.
+                  on people.
                 </p>
               </div>
             </div>
