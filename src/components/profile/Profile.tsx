@@ -30,7 +30,7 @@ const Profile = () => {
         <section className="intro-profile-section">
           <div className="name-section">
             {/* <h1>Connor Young</h1> */}
-            <h1 className="">Welcome!</h1>
+            <h1 className="welcome">Welcome!</h1>
             <div className="intro-links">
               <div className="external-links">
                 <h3 className="link">

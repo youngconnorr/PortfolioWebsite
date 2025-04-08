@@ -145,14 +145,31 @@ h3 {
 
 .profile-page-about-me {
   width: 300px;
+  padding-left: 10px;
+  padding-right: 25px;
+  padding-bottom: 1px;
+  transition: background-color 0.3s ease-out;
 }
 
-/* .profile-page-about-me:hover {
-  --linkHoverColor: #dad391;
+.profile-page-about-me:hover {
+  --linkHoverColor: #a1d0e6;
   border-color: var(--linkHoverColor);
   background-color: var(--linkHoverColor);
-  transition: 1s ease-in-out;
-} */
+}
+
+.welcome {
+  width: fit-content;
+  padding-left: 4px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  transition: background-color 0.3s ease-out;
+}
+
+.welcome:hover {
+  --linkHoverColor: #bfb6eb;
+  border-color: var(--linkHoverColor);
+  background-color: var(--linkHoverColor);
+}
 
 .hidden {
   opacity: 0;

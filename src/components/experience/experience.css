@@ -52,22 +52,18 @@
 
   .role-title {
     display: block;
+    padding-bottom: 15px;
   }
 
   .role {
     margin: 0px;
     padding: 0px;
-    padding-bottom: 16px;
   }
 
   .employer {
     padding: 0px;
-    margin-bottom: 30px;
     margin-top: 0px;
-  }
-
-  .employer {
-    padding-top: 8px;
+    padding-top: 5px;
     margin-bottom: 10px;
   }
 }

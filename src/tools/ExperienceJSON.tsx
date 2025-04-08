@@ -18,10 +18,9 @@ export const ExperienceJSON: Experience[] = [
     id: 1,
     role: "Software Engineer [Part-Time]",
     employer: "UBC Learning Centre",
-    languages:
-      "Python | JavaScript | PostgreSQL | Apache Superset | pandas | bs4",
+    languages: "Python | JavaScript | PostgreSQL | Django",
     description:
-      "Developed educational software for 2500+ students and 20+ professors. Automated the management of 250+ class requirements across 12 majors using Python, Beautiful Soup. Created an ETL pipeline of 500+ lines of faculty data using Python PostgreSQL, and Apache Superset. Built interactive learning tools for 700+ students with JavaScript and SCORM API, including a quiz-integrated crossword puzzle. Collaborated with professors to create custom quiz software, manage faculty data, and provide IT support.",
+      "I crafted a full-stack Django app with PostgreSQL for 2,500+ students and 20 professors, streamlining 150+ classes, organizing 180+ requirements across 12 majors with a Python scraper, and integrating JavaScript with SCORM API to create engaging Canvas tools while collaborating closely with faculty.",
   },
   {
     id: 2,
