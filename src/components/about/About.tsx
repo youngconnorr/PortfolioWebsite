@@ -37,9 +37,7 @@ const About = () => {
             </p>
           </div>
           <div className="currently-working-on-section hidden2">
-            <h2>
-              I'm currently working on <b>MarketMirror</b>
-            </h2>
+            <h2>I'm currently working on MarketMirror</h2>
             {/* <a
               className="working-on-project"
               href="https://devpost.com/software/moodify-e7go5a"
