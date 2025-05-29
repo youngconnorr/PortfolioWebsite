@@ -91,7 +91,7 @@ const Profile = () => {
               </div>
               <div className="profile-page-about-me">
                 <h2>Hi I'm Connor!</h2>
-                <p>I'm a software engineer from Vancouver, BC.</p>
+                <p>I'm a software engineer and product manager from Vancouver, BC.</p>
                 <p>
                   I’m a third year student at the University of British Columbia
                   studying computer science.
