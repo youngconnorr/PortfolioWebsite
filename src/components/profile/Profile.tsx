@@ -94,7 +94,7 @@ const Profile = () => {
                 <p>I'm a software engineer and product manager from Vancouver, BC.</p>
                 <p>
                   I’m a third year student at the University of British Columbia
-                  studying computer science.
+                  studying cognitive systems.
                 </p>
                 <p>
                   Passionate about making software that creates a lasting impact

@@ -30,8 +30,7 @@ const About = () => {
             <h2>Hi I'm Connor!</h2>
             <p>
               I enjoy connecting with people, exploring new technology, and
-              developing cool projects with a particular interest in fullstack
-              development. Outside of tech - you can find me competing in sports
+              creating cool projects with a particular interest in product management. Outside of tech - you can find me competing in sports
               such as volleyball and bouldering, hiking up mountains with
               friends, or just listening to good music 😄
             </p>
