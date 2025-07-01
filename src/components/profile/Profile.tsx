@@ -97,8 +97,7 @@ const Profile = () => {
                   studying cognitive systems.
                 </p>
                 <p>
-                  Passionate about making software that creates a lasting impact
-                  on people.
+                  Currently writing on <a href="https://theproductframe.framer.website" style={{textDecoration: 'underline' }}>The Product Frame</a>
                 </p>
               </div>
             </div>
