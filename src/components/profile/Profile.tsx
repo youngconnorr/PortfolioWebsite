@@ -1,4 +1,4 @@
-import PFP from "../../tools/pfp_photo.png";
+import PFP from "../../tools/linkedpfp - Copy.jpg";
 import PDF from "../../tools/public_resume.pdf";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -103,7 +103,7 @@ const Profile = () => {
             </div>
           </div>
           <div>
-            <img src={PFP} alt="" width="400px" className="intro-img hidden" />
+            <img src={PFP} alt="" className="intro-img hidden" />
           </div>
         </section>
       </div>
