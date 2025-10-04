@@ -29,8 +29,8 @@ const About = () => {
           <div className="me-section hidden">
             <h2>Hi I'm Connor!</h2>
             <p>
-              I enjoy connecting with people, exploring new technology, and
-              creating cool projects with a particular interest in product management. Outside of tech - you can find me competing in sports
+              I enjoy exploring the product management world and new AI/ML tools while
+              creating cool projects that challenge my technical skills. Outside of tech - you can find me competing in sports
               such as volleyball and bouldering, hiking up mountains with
               friends, or just listening to good music 😄
             </p>
@@ -47,10 +47,8 @@ const About = () => {
             </a> */}
             <p className="">
               An investment portfolio tracking app to display gains or losses
-              based on the buy price and current market price. The backend built
-              using Elixir, Phoenix, and GraphQL, with subscriptions enabling
-              real-time stock price updates. A modern UI created using React
-              with TypeScript and CSS, supporting over 5,000 users.
+              based on the buy price and current market price. Using an the Claude API integrated with an MCP server, I can connect it to a  React frontend for
+              real-time stock price updates.
             </p>
             {/* <p className="">
               Created during NwHacks 2025 and in the process of being fully

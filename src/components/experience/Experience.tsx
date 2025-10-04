@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ExperienceJSON } from "../../tools/ExperienceJSON";
+import { ExperienceJSON } from "./ExperienceJSON";
 
 const Experience = () => {
   useEffect(() => {
