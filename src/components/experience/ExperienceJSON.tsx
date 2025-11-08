@@ -31,7 +31,7 @@ export const ExperienceJSON: Experience[] = [
   },
   {
     id: 4,
-    role: "Community Director",
+    role: "Program Director",
     employer: "Product Management Club UBC",
     languages: "Notion | Roadmapping | Corporate Outreach | Event Planning",
     description:
