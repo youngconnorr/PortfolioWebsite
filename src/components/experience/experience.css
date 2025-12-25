@@ -1,69 +1,159 @@
-.title {
+.experience-title {
   display: flex;
   justify-content: center;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+}
+
+.experience-subtitle {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  color: #86868b;
+  font-size: 1.4rem;
+  margin: 0 0 48px 0;
 }
 
 .single-job {
   width: 80%;
   margin-left: 5%;
-  margin-bottom: 5%;
-  margin-top: -20px;
+  margin-bottom: 48px;
+  padding: 24px 32px;
+  border-radius: var(--apple-radius, 20px);
+  background-color: #ffffff;
+  box-shadow: var(--apple-shadow, 0 4px 16px rgba(0, 0, 0, 0.08));
+}
+
+.single-job:hover {
+  background-color: #f5f5f7;
 }
 
 .experience-section {
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 .role-title {
-  display: flex;
+  display: block;
 }
 
 .role {
-  margin-right: 10px;
+  margin: 0;
+  font-weight: 700;
+  color: #1d1d1f;
+  font-size: 1.4rem;
 }
 
 .employer {
-  padding-top: 8px;
+  margin: 4px 0 16px 0;
+  font-weight: 400;
+  color: #86868b;
+  font-size: 1rem;
 }
 
 .description {
-  margin-top: -20px;
+  margin: 0;
+  font-weight: 400;
+  color: #1d1d1f;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .vertical-line {
   margin-left: 80px;
   width: 2px;
-  height: 50px;
-  background-color: rgba(128, 128, 128, 0.404);
+  height: 32px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
 }
 
 .languages {
-  margin-top: -20px;
-  margin-bottom: 20px;
+  margin: 12px 0 0 0;
+  font-size: 0.9rem;
+  color: #86868b;
+}
+
+@media (max-width: 768px) {
+  .experience-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .experience-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+  }
+
+  .experience-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+    margin-top: 32px;
+  }
+
+  .single-job {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .role {
+    font-size: 1.2rem;
+  }
+
+  .role-title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vertical-line {
+    margin: 16px auto;
+  }
 }
 
 @media (max-width: 480px) {
+  .experience-title {
+    font-size: 1.5rem;
+  }
+
+  .experience-subtitle {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
   .single-job {
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    margin-top: -20px;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding: 16px;
   }
 
   .role-title {
     display: block;
-    padding-bottom: 15px;
   }
 
   .role {
-    margin: 0px;
-    padding: 0px;
+    text-align: center;
+    font-size: 1.1rem;
   }
 
   .employer {
-    padding: 0px;
-    margin-top: 0px;
-    padding-top: 5px;
-    margin-bottom: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .languages {
+    text-align: center;
+  }
+
+  .vertical-line {
+    margin: 12px auto;
   }
 }

@@ -3,55 +3,36 @@
 @import url("./components/navbar/navbar.css");
 @import url("./components/about/about.css");
 @import url("./components/experience/experience.css");
+@import url("./components/volunteering/volunteering.css");
 
-.hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
+/* Apple-style smooth slow scroll */
+html {
+  scroll-behavior: smooth;
 }
 
-.hidden2 {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(100%);
-  transition: all 1s;
-}
-
-.hidden3 {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateY(100%);
-  transition: all 1s;
-}
-
-.hidden4 {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateY(-100%);
-  transition: all 1s;
-}
-
-@media (prefers-reduced-motion) {
-  .hidden {
-    transition: none;
+/* Subtle page load animation - upward fade */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-
-  .hidden2 {
-    transition: none;
-  }
-
-  .hidden3 {
-    transition: none;
-  }
-
-  .hidden4 {
-    transition: none;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+.page-wrapper {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* No scroll-triggered animations - elements always visible */
+.hidden,
+.hidden2,
+.hidden3,
+.hidden4,
 .show {
   opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
+  filter: none;
+  transform: none;
 }

@@ -26,12 +26,23 @@ const Profile = () => {
 
   return (
     <section className="intro-section">
+
       <div className="intro-profile-div hidden4">
         <section className="intro-profile-section">
+          {/* Right Section */}
           <div className="name-section">
             {/* <h1>Connor Young</h1> */}
-            <h1 className="welcome">Welcome!</h1>
-            <div className="intro-links">
+            <h1 className="welcome">Hi I'm Connor! 👋</h1>
+              <div className="profile-page-about-me">
+                <h2>Software Engineer & Product Manager</h2>
+                <p>
+                  I’m a third year student at the University of British Columbia
+                  studying cognitive systems.
+                </p>
+                <p>
+                  Currently writing on <a href="https://theproductframe.framer.website" style={{textDecoration: 'underline' }}>The Product Frame</a>
+                </p>
+              </div>
               <div className="external-links">
                 <h3 className="link">
                   <a
@@ -85,28 +96,18 @@ const Profile = () => {
                 </h3>
                 <h3 className="link">
                   <a href={PDF} target="_blank" rel="noopener noreferrer">
-                    <b> Resume</b>
+                    <b>  Resume</b>
                   </a>
                 </h3>
               </div>
-              <div className="profile-page-about-me">
-                <h2>Hi I'm Connor!</h2>
-                <p>I'm a software engineer and product manager from Vancouver, BC.</p>
-                <p>
-                  I’m a third year student at the University of British Columbia
-                  studying cognitive systems.
-                </p>
-                <p>
-                  Currently writing on <a href="https://theproductframe.framer.website" style={{textDecoration: 'underline' }}>The Product Frame</a>
-                </p>
-              </div>
-            </div>
           </div>
+          {/* Left section */}
           <div>
             <img src={PFP} alt="" className="intro-img hidden" />
           </div>
         </section>
       </div>
+
       <div className="links-section">
         <Link to="/experience" className="web-link hidden link1">
           Experience
@@ -114,10 +115,14 @@ const Profile = () => {
         <Link to="/projects" className="web-link hidden3 link2">
           Projects
         </Link>
+        <Link to="/volunteering" className="web-link hidden2 link3">
+          Volunteering
+        </Link>
         <Link to="/about" className="web-link hidden2 link3">
           About Me
         </Link>
       </div>
+      
     </section>
   );
 };

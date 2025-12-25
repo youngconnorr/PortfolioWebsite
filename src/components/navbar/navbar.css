@@ -1,25 +1,25 @@
 .go-back {
-  margin-left: 65px;
-  margin-top: 5px;
+  margin-left: 40px;
+  margin-top: 16px;
 }
 
 .link-go-back {
   display: flex;
-  transition: 0.2s ease-in-out;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 980px;
+  color: #1d1d1f;
+  font-weight: 500;
 }
 
 .back-button-arrow {
-  margin-right: 5px;
-  transition: 0.2s ease-in-out;
+  margin-right: 8px;
 }
 
-.link-go-back:hover .back-button-arrow {
-  transform: translateX(-30%);
-}
 
 @media (max-width: 480px) {
   .go-back {
-    margin-left: 5px;
-    margin-top: 5px;
+    margin-left: 16px;
+    margin-top: 16px;
   }
 }

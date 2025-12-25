@@ -1,8 +1,8 @@
 :root {
-  font-family: "Titillium Web", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Titillium Web", sans-serif;
   color-scheme: light dark;
-  color: black;
-  background-color: white;
+  color: #1d1d1f;
+  background-color: #fbfbfd;
 }
 
 a {
@@ -47,39 +47,48 @@ h3 {
 }
 
 .check-out-button {
-  border-bottom: 1px solid black;
-  padding: 5px;
-  transition: 0.5s ease;
+  border: none;
+  padding: 10px 20px;
+  background-color: #0071e3;
+  color: white;
+  border-radius: 980px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .check-out-button:hover {
-  background-color: black;
-  border-color: black;
-  border-radius: 12px;
-  color: white;
+  background-color: #0077ed;
 }
 
 .project-title {
   display: flex;
   justify-content: center;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+}
+
+.project-subtitle {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  color: #86868b;
+  font-size: 1.4rem;
+  margin: 0 0 48px 0;
 }
 
 .single-project {
-  border: 1px solid white;
-  border-radius: 15px;
-  padding: 55px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 50px;
-  height: 380px;
+  border: none;
+  border-radius: var(--apple-radius-lg, 28px);
+  padding: 32px;
+  height: 200px;
   margin-bottom: 50px;
-  transition: background-color 0.3s ease;
+  background-color: #ffffff;
+  box-shadow: var(--apple-shadow, 0 4px 16px rgba(0, 0, 0, 0.08));
 }
 
 .single-project:hover {
-  background-color: #a9d2dfd2;
-  transition: background-color 0.2s ease;
+  background-color: #f5f5f7;
 }
 
 .project-parent-div {
@@ -95,23 +104,22 @@ h3 {
 
 /* Tablet and mobile styling */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.4rem;
-  }
-
   .single-project {
-    padding: 20px;
+    padding: 24px;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+    text-align: center;
   }
 
   .project-parent-div {
     width: 100%;
+    padding: 0 16px;
   }
 
   .map-projects {
     flex-direction: column;
     align-items: center;
+    padding: 0 16px;
   }
 
   .project-title {
@@ -119,47 +127,80 @@ h3 {
     text-align: center;
   }
 
+  .project-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+  }
+
+  .project-name {
+    font-size: 1.2rem;
+  }
+
+  .text-section {
+    font-size: 0.95rem;
+  }
+
   .project-image {
     width: 100%;
     height: auto;
+    margin: 0 auto;
   }
 
   .description-project {
     font-size: 1rem;
+    text-align: center;
+  }
+
+  .check-out-button {
+    display: block;
+    margin: 16px auto 0;
   }
 }
 
 /* Mobile styling */
 @media (max-width: 480px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-
   .single-project {
-    padding: 15px;
+    padding: 16px;
     height: auto;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .project-parent-div {
     width: 100%;
+    padding: 0 8px;
   }
 
   .project-title {
     font-size: 1.5rem;
+    text-align: center;
   }
 
-  .project-image {
-    width: 100%;
-    height: auto;
+  .project-subtitle {
+    font-size: 1rem;
+    margin-bottom: 24px;
   }
 
-  .description-project {
+  .project-name {
+    font-size: 1.1rem;
+  }
+
+  .text-section {
     font-size: 0.9rem;
   }
 
   .project-image {
     display: none;
+  }
+
+  .description-project {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .check-out-button {
+    font-size: 13px;
+    padding: 8px 16px;
   }
 }
 

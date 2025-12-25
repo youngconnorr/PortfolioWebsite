@@ -4,14 +4,9 @@ const About = () => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        // console.log(entry);
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
-          // console.log(entry + "added to show");
         }
-        //  else {
-        //   entry.target.classList.remove("show");
-        // }
       });
     });
 
@@ -22,54 +17,76 @@ const About = () => {
   }, []);
 
   return (
-    <>
-      <div>
-        <h1 className="about hidden4">About me:</h1>
-        <section className="school-section">
-          <div className="me-section hidden">
-            <h2>Hi I'm Connor!</h2>
-            <p>
-              I enjoy exploring the product management world and new AI/ML tools while
-              creating cool projects that challenge my technical skills. Outside of tech - you can find me competing in sports
-              such as volleyball and bouldering, hiking up mountains with
-              friends, or just listening to good music 😄
-            </p>
+    <div className="about-container">
+      <h1 className="about-title hidden4">About Me</h1>
+      <h2 className="about-subtitle">Aspirations & Values</h2>
+
+      {/* Who Am I Section */}
+      <section className="about-section hidden">
+        <h3 className="section-label">Who am I?</h3>
+        <h2 className="section-heading">Hi! I'm Connor 🐶</h2>
+        <div className="section-content">
+          <p>
+            I'm currently in my third year, pursuing a major in Cognitive Systems
+            at the University of British Columbia.
+          </p>
+          <p>
+            My love for technology came from the belief that innovation can empower
+            people and solve real-world problems. I always strive to build
+            something that could positively impact people's lives, whether
+            that's through AI-powered tools, intuitive user experiences, or
+            scalable systems that make a difference.
+          </p>
+          <p>
+            My lifetime goal is to make a noticable impact on the world through my work. For now, I am continually 
+            learning from my peers, colleagues, and mentors
+            who push me to think bigger and dream bolder.
+          </p>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="about-section hidden2">
+        <h3 className="section-label">Values</h3>
+        <h2 className="section-heading">My Principles</h2>
+        <div className="values-grid">
+          <div className="value-item">
+            <h4 className="value-title">Innovation</h4>
+            <p className="value-description">Pushing boundaries forward</p>
           </div>
-          <div className="currently-working-on-section hidden2">
-            <h2>I'm currently working on MarketMirror</h2>
-            {/* <a
-              className="working-on-project"
-              href="https://devpost.com/software/moodify-e7go5a"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>Check out Devpost</h3>
-            </a> */}
-            <p className="">
-              An investment portfolio tracking app to display gains or losses
-              based on the buy price and current market price. Using an the Claude API integrated with an MCP server, I can connect it to a  React frontend for
-              real-time stock price updates.
-            </p>
-            {/* <p className="">
-              Created during NwHacks 2025 and in the process of being fully
-              developed by me and my team.
-            </p> */}
+          <div className="value-item">
+            <h4 className="value-title">Social Good</h4>
+            <p className="value-description">Tech that helps people</p>
           </div>
-        </section>
-        {/* <section className="interests-section">
-          <h2 className="center">Parts of my life</h2>
-          <div className="interest-list">
-            <div className="interested-buttons ">
-              <p className="interested">Innovative Tech</p>
-              <p className="interested">Full Stack Development</p>
-              <p className="interested">Volleyball</p>
-              <p className="interested">Bouldering</p>
-              <p className="interested">Good Music</p>
-            </div>
+          <div className="value-item">
+            <h4 className="value-title">Open Minded</h4>
+            <p className="value-description">Embracing new perspectives</p>
           </div>
-        </section> */}
-      </div>
-    </>
+          <div className="value-item">
+            <h4 className="value-title">Intuition</h4>
+            <p className="value-description">Trusting the process</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Currently Working On Section */}
+      <section className="about-section hidden3">
+        <h3 className="section-label">Current Focus</h3>
+        <h2 className="section-heading">What I'm Building</h2>
+        <div className="section-content">
+          <p>
+            I'm currently working on <strong>Coin Check</strong> — a machine
+            learning model trained to predict the next candle of Bitcoin using
+            PyTorch and historical price data.
+          </p>
+          <p>
+            Outside of tech, you can find me competing in sports such as
+            volleyball and bouldering, hiking up mountains with friends, or just
+            listening to good music.
+          </p>
+        </div>
+      </section>
+    </div>
   );
 };
 
