@@ -17,6 +17,7 @@ import Experience from "./components/experience/Experience";
 import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
 import Volunteering from "./components/volunteering/Volunteering";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import { Routes, Route } from "react-router-dom";
 // import { projects } from "./tools/Projects";
 // import PFP from "./tools/DSCF2156.jpeg";
@@ -40,6 +41,7 @@ function App() {
           <Route path="/volunteering" element={<Volunteering />} />
         </Routes>
       </div>
+      <ScrollToTop />
     </>
   );
 }

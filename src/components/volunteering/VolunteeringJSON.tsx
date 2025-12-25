@@ -9,7 +9,7 @@ export interface Volunteering {
 export const VolunteeringJSON: Volunteering[] = [
   {
     id: 1,
-    role: "Hackathon Mentor",
+    role: "Hackathon Mentor 💻",
     employer: "nwPlus HackCamp",
     languages: "React | Firebase | Git",
     description:
@@ -17,7 +17,7 @@ export const VolunteeringJSON: Volunteering[] = [
   },
   {
     id: 2,
-    role: "AP Computer Science Tutor",
+    role: "AP Computer Science Tutor 📚",
     employer: "BeWise Education",
     languages: "Java | Object Oriented Programming",
     description:
@@ -25,7 +25,7 @@ export const VolunteeringJSON: Volunteering[] = [
   },
   {
     id: 3,
-    role: "Program Director",
+    role: "Program Director 📋",
     employer: "Product Management Club UBC",
     languages: "Notion | Roadmapping | Corporate Outreach | Event Planning",
     description:
@@ -33,7 +33,7 @@ export const VolunteeringJSON: Volunteering[] = [
   },
   {
     id: 4,
-    role: "Outreach Director",
+    role: "Outreach Director 🌍",
     employer: "UBC Bridges International",
     languages: "Event Planning | Community Outreach",
     description:
