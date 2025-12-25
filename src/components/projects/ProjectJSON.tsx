@@ -1,5 +1,4 @@
 import mindfit from "../../tools/mindfit.png";
-import liftify from "../../tools/liftify.png";
 import photoWebsite from "../../tools/photoWebsite.png";
 import stockAnalyzer from "../../tools/stock_analyzer_photo.png";
 import advizrPhoto from "../../tools/advizr-photo.png";

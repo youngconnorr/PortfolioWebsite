@@ -1,5 +1,5 @@
 import { projectJSON } from "./ProjectJSON";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 const Projects = () => {
   const projectRefs = useRef<(HTMLElement | null)[]>([]);
