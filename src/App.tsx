@@ -9,7 +9,7 @@ Application updates needed:
 */
 
 import "./index.css";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Profile from "./components/profile/Profile";
 import Navbar from "./components/navbar/Navbar";
@@ -26,6 +26,10 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   // const [showExperience, setShowExperience] = useState<boolean>(true);
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   const isProfile = location.pathname === "/";
 
