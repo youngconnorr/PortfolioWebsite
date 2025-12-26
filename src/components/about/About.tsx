@@ -63,8 +63,8 @@ const About = () => {
             <p className="value-description">Embracing new perspectives</p>
           </div>
           <div className="value-item">
-            <h4 className="value-title">Intuition</h4>
-            <p className="value-description">Trusting the process</p>
+            <h4 className="value-title">Mentorship</h4>
+            <p className="value-description">Growing through guidance</p>
           </div>
         </div>
       </section>

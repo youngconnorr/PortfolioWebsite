@@ -9,6 +9,7 @@ export interface Project {
   id: number;
   name: string;
   description: string;
+  learningObjective: string;
   img: string;
   imgWidth: string;
   imgHeight: string;
@@ -20,7 +21,8 @@ export const projectJSON: Project[] = [
     id: 1,
     name: "📸 Photography Portfolio",
     description:
-      "Designed a responsive front-end web application with React and CSS to display my personal photography portfolio. Implementing simple algorithms such as a circular array for interactive image cycling.",
+      "A responsive React web application showcasing my personal photography portfolio with interactive image cycling.",
+    learningObjective: "Learn React and CSS animations for interactive photo galleries.",
     img: photoWebsite,
     imgWidth: "26vw",
     imgHeight: "28vh",
@@ -40,7 +42,8 @@ export const projectJSON: Project[] = [
     id: 3,
     name: "🧠 MindFit",
     description:
-      "Programmed an interactive React app with omnichannel features to integrate personalized exercise and meditation into students’ schedules. Project from YouCode 2024 hackathon.",
+      "An interactive React app that integrates personalized exercise and meditation into students' daily schedules.",
+    learningObjective: "Rapid prototyping and user-centered design under hackathon constraints.",
     img: mindfit,
     imgWidth: "30vw",
     imgHeight: "30vh",
@@ -50,7 +53,8 @@ export const projectJSON: Project[] = [
     id: 4,
     name: "🗺️ PathFinder",
     description:
-      "Developed an intelligent itinerary planning web application utilizing the OpenAI API for personalized travel plans across 4000+ cities. Used React, Django, SQLite, and the OpenAI API.",
+      "An intelligent itinerary planning web app using OpenAI API, React, and Django for personalized travel recommendations.",
+    learningObjective: "End-to-end full-stack development with LLM API integration.",
     img: pathfinder,
     imgWidth: "35vw",
     imgHeight: "30vh",
@@ -60,7 +64,8 @@ export const projectJSON: Project[] = [
     id: 5,
     name: "📈 Stock Scout",
     description:
-      "Designed an object-oriented Python app to monitor real-time stock market data, providing users with accurate information to make informed investment decisions. Built with python, pandas, and Yahoo Finance API, visualizing stock value through matplotlib.",
+      "A Python app that monitors real-time stock market data and visualizes trends using pandas and matplotlib.",
+    learningObjective: "Data pipelines with pandas and financial data visualization.",
     img: stockAnalyzer,
     imgWidth: "25vw",
     imgHeight: "25vh",
@@ -70,7 +75,8 @@ export const projectJSON: Project[] = [
     id: 6,
     name: "🎓 Advizr",
     description:
-      "A lightweight AI academic advisor for university students developed through using Cohere's LLM for retrieval augmented generation (RAG). Allowing for deterministic responses, so it always points students in the right direction. Created during Hack the North 2024 and in the process of being fully developed by me and my team.",
+      "A lightweight AI academic advisor using Cohere's LLM and RAG to provide reliable guidance for university students.",
+    learningObjective: "RAG architecture and prompt engineering for reliable AI responses.",
     img: advizrPhoto,
     imgWidth: "15vw",
     imgHeight: "20vh",
@@ -80,7 +86,19 @@ export const projectJSON: Project[] = [
     id: 7,
     name: "🎵 Moodify",
     description:
-      "An app that curates Spotify playlists by analyzing mood, photos, weather, and time, leveraging OpenAI and Spotify APIs to recommend music based on user input. Engineered with a dynamic React Native UI with Expo to create an immersive user experience!",
+      "A React Native app that curates Spotify playlists by analyzing mood, photos, weather, and time using OpenAI.",
+    learningObjective: "React Native mobile development and third-party API orchestration.",
+    img: moodifyPhoto,
+    imgWidth: "15vw",
+    imgHeight: "23vh",
+    link: "https://devpost.com/software/moodify-e7go5a",
+  },
+  {
+    id: 8,
+    name: "🧶 Threadly",
+    description:
+      "A concurrent job processor built with Go, Redis, and Docker featuring fault-tolerant worker pools and a React dashboard.",
+    learningObjective: "Go concurrency, Redis job queues, and fault-tolerant system design.",
     img: moodifyPhoto,
     imgWidth: "15vw",
     imgHeight: "23vh",

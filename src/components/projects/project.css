@@ -77,48 +77,108 @@ h3 {
   margin: 0 0 48px 0;
 }
 
+.project-row {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 40px;
+}
+
 .single-project {
+  flex: 1;
   border: none;
-  border-radius: var(--apple-radius-lg, 28px);
+  border-radius: 20px;
   padding: 32px;
-  height: 200px;
-  margin-bottom: 50px;
   background-color: #ffffff;
-  box-shadow: var(--apple-shadow, 0 4px 16px rgba(0, 0, 0, 0.08));
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .single-project:hover {
-  background-color: #f5f5f7;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.learning-card {
+  width: 280px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  padding: 28px;
+  background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learning-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.learning-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #86868b;
+  margin-bottom: 12px;
+}
+
+.learning-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1d1d1f;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .project-parent-div {
-  width: 500px;
+  width: 100%;
 }
 
 .map-projects {
-  margin-top: 10px;
+  margin: 10px auto 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 48px;
+  width: 80%;
 }
 
 /* Tablet and mobile styling */
 @media (max-width: 768px) {
+  .project-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
   .single-project {
     padding: 24px;
-    height: auto;
-    margin-bottom: 24px;
     text-align: center;
+  }
+
+  .learning-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .learning-label {
+    font-size: 11px;
+  }
+
+  .learning-text {
+    font-size: 14px;
   }
 
   .project-parent-div {
     width: 100%;
-    padding: 0 16px;
+    padding: 0;
   }
 
   .map-projects {
-    flex-direction: column;
-    align-items: center;
     padding: 0 16px;
   }
 
@@ -159,16 +219,35 @@ h3 {
 
 /* Mobile styling */
 @media (max-width: 480px) {
+  .project-row {
+    margin-bottom: 24px;
+  }
+
   .single-project {
     padding: 16px;
-    height: auto;
-    margin-bottom: 20px;
     text-align: center;
+  }
+
+  .learning-card {
+    padding: 16px;
+  }
+
+  .learning-label {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+
+  .learning-text {
+    font-size: 13px;
   }
 
   .project-parent-div {
     width: 100%;
-    padding: 0 8px;
+    padding: 0;
+  }
+
+  .map-projects {
+    padding: 0 12px;
   }
 
   .project-title {
@@ -201,11 +280,5 @@ h3 {
   .check-out-button {
     font-size: 13px;
     padding: 8px 16px;
-  }
-}
-
-@media (min-width: 1800px) {
-  .project-image {
-    display: none;
   }
 }

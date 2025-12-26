@@ -71,47 +71,30 @@ const Projects = () => {
             <div key={project.id}>
               <section
                 ref={(el) => (projectRefs.current[index] = el)}
-                className={`single-project ${
+                className={`project-row ${
                   project.id % 2 === 1 ? "hidden" : "hidden2"
                 }`}
               >
-                <div className="project-parent-div">
-                  <h2 className="project-name">{project.name}</h2>
-                  <div className="description-project">
-                    <div>
-                      <b
-                        className="check-out-button project-name"
-                        onClick={() => window.open(project.link, "_blank")}
-                        style={{ cursor: "pointer" }}
-                      >
-                        Check out project
-                      </b>
-                      <p className="text-section">{project.description}</p>
+                <div className="single-project">
+                  <div className="project-parent-div">
+                    <h2 className="project-name">{project.name}</h2>
+                    <div className="description-project">
+                      <div>
+                        <b
+                          className="check-out-button project-name"
+                          onClick={() => window.open(project.link, "_blank")}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Check out project
+                        </b>
+                        <p className="text-section">{project.description}</p>
+                      </div>
                     </div>
-                    {/* {project.id === 4 ? (
-                      <iframe
-                        width="300"
-                        height="200"
-                        src="https://www.youtube.com/embed/GLxtQhVK0mY"
-                      />
-                    ) : project.id === 2 ? (
-                      <iframe
-                        width="300"
-                        height="200"
-                        src="https://www.youtube.com/embed/vRYXmYW1e4c"
-                      />
-                    ) : (
-                      <img
-                        className="project-image img-"
-                        src={project.img}
-                        style={{
-                          width: project.imgWidth,
-                          height: project.imgHeight,
-                        }}
-                        alt=""
-                      />
-                    )} */}
                   </div>
+                </div>
+                <div className="learning-card">
+                  <span className="learning-label">Learning Objective</span>
+                  <p className="learning-text">{project.learningObjective}</p>
                 </div>
               </section>
             </div>

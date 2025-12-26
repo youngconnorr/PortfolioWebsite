@@ -13,7 +13,7 @@ export const VolunteeringJSON: Volunteering[] = [
     employer: "nwPlus HackCamp",
     languages: "React | Firebase | Git",
     description:
-      "Mentored a 200+ participant hackathon, helping developers debug React, manage API calls, and handle deployment while coordinating with 50+ mentors to maintain smooth operations throughout the 24-hour event.",
+      "Mentored hackathon participants by helping developers debug React, manage API calls, and handle deployment.",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const VolunteeringJSON: Volunteering[] = [
     employer: "BeWise Education",
     languages: "Java | Object Oriented Programming",
     description:
-      "Tutored AP students in Java and object-oriented programming, adapting lessons and feedback to boost overall grades by 20%. Guided students in mastering data structures and algorithms with clear, simplified explanations to ensure understanding and progress.",
+      "Tutored AP students in Java and object-oriented programming, guiding them through data structures and algorithms.",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const VolunteeringJSON: Volunteering[] = [
     employer: "Product Management Club UBC",
     languages: "Notion | Roadmapping | Corporate Outreach | Event Planning",
     description:
-      "Directed internal events and led an internal executive development program for 20 members, enhancing their product management skills. Managed corporate outreach and partnerships with MAANG+ companies (Google, Apple, Spotify), securing sponsorships and resources for club events.",
+      "Directed internal events, led executive development programs, and managed corporate outreach with major tech companies.",
   },
   {
     id: 4,
@@ -37,6 +37,6 @@ export const VolunteeringJSON: Volunteering[] = [
     employer: "UBC Bridges International",
     languages: "Event Planning | Community Outreach",
     description:
-      "Led outreach initiatives to connect with international students, organizing events that fostered community and cultural exchange. Coordinated with local organizations to provide resources and support for over 100 international students at UBC.",
+      "Led outreach initiatives connecting international students through community events and cultural exchange programs.",
   }
 ];
