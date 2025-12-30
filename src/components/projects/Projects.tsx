@@ -71,9 +71,7 @@ const Projects = () => {
             <div key={project.id}>
               <section
                 ref={(el) => (projectRefs.current[index] = el)}
-                className={`project-row ${
-                  project.id % 2 === 1 ? "hidden" : "hidden2"
-                }`}
+                className={`project-row`}
               >
                 <div className="single-project">
                   <div className="project-parent-div">
