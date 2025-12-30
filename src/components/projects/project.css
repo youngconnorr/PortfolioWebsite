@@ -82,6 +82,7 @@ h3 {
   gap: 24px;
   align-items: stretch;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .single-project {
