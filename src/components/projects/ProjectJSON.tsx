@@ -73,28 +73,6 @@ export const projectJSON: Project[] = [
   },
   {
     id: 6,
-    name: "🎓 Advizr",
-    description:
-      "A lightweight AI academic advisor using Cohere's LLM and RAG to provide reliable guidance for university students.",
-    learningObjective: "RAG architecture and prompt engineering for reliable AI responses.",
-    img: advizrPhoto,
-    imgWidth: "15vw",
-    imgHeight: "20vh",
-    link: "https://devpost.com/software/advizr",
-  },
-  {
-    id: 7,
-    name: "🎵 Moodify",
-    description:
-      "A React Native app that curates Spotify playlists by analyzing mood, photos, weather, and time using OpenAI.",
-    learningObjective: "React Native mobile development and third-party API orchestration.",
-    img: moodifyPhoto,
-    imgWidth: "15vw",
-    imgHeight: "23vh",
-    link: "https://devpost.com/software/moodify-e7go5a",
-  },
-  {
-    id: 8,
     name: "🧶 Threadly",
     description:
       "A concurrent job processor built with Go, Redis, and Docker featuring fault-tolerant worker pools and a React dashboard.",
@@ -102,6 +80,39 @@ export const projectJSON: Project[] = [
     img: moodifyPhoto,
     imgWidth: "15vw",
     imgHeight: "23vh",
-    link: "https://devpost.com/software/moodify-e7go5a",
+    link: "https://github.com/youngconnorr/go-redis-jobqueue",
+  },
+  {
+    id: 8,
+    name: "🎓 Advizr",
+    description:
+      "A lightweight AI academic advisor using Cohere's LLM and RAG to provide reliable guidance for university students.",
+    learningObjective: "RAG architecture and prompt engineering for reliable AI responses.",
+    img: advizrPhoto,
+    imgWidth: "15vw",
+    imgHeight: "20vh",
+    link: "https://connoryoung.notion.site/Advizr-2e230ab5aaf680d398abdd5592b37e87?pvs=74",
+  },
+  // {
+  //   id: 7,
+  //   name: "🎵 Moodify",
+  //   description:
+  //     "A React Native app that curates Spotify playlists by analyzing mood, photos, weather, and time using OpenAI.",
+  //   learningObjective: "React Native mobile development and third-party API orchestration.",
+  //   img: moodifyPhoto,
+  //   imgWidth: "15vw",
+  //   imgHeight: "23vh",
+  //   link: "https://devpost.com/software/moodify-e7go5a",
+  // },
+  {
+    id: 9,
+    name: "💸 Market Note",
+    description:
+      "A real-time stock news aggregator with interactive price charts and a comprehensive earnings calendar for all US companies",
+    learningObjective: "Build a production-ready fintech application with API integration, caching, and containerization.",
+    img: moodifyPhoto,
+    imgWidth: "15vw",
+    imgHeight: "23vh",
+    link: "https://connoryoung.notion.site/Stock-News-Project-2e230ab5aaf68011bfeccb7f72550dee?pvs=74",
   },
 ];

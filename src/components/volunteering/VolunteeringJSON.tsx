@@ -33,7 +33,7 @@ export const VolunteeringJSON: Volunteering[] = [
   },
   {
     id: 4,
-    role: "Outreach Director 🌍",
+    role: "Community Director 🌍",
     employer: "UBC Bridges International",
     languages: "Event Planning | Community Outreach",
     description:
