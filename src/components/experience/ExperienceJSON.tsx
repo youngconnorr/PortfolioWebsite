@@ -31,9 +31,9 @@ export const ExperienceJSON: Experience[] = [
   },
   {
     id: 4,
-    role: "ML Data Scientist Intern 🧠",
+    role: "Product Manager Intern 🧠",
     employer: "GeoComply",
     languages: "",
-    description: "Incoming Winter 2026",
+    description: "Machine Learning Product team driving enterprise adoption, model quality standards, and automation across large-scale systems.",
   },
 ];
