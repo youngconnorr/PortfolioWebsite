@@ -98,7 +98,7 @@ const Profile = () => {
                   <a href={PDF} target="_blank" rel="noopener noreferrer">
                     <b>  Resume</b>
                   </a>
-                </h3> */}
+                </h3> */} 
               </div>
           </div>
           {/* Left section */}
