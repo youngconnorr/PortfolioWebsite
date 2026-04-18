@@ -27,11 +27,11 @@ const Volunteering = () => {
       <section className="volunteering-section">
         {[...VolunteeringJSON].reverse().map((item) => (
           <div key={item.id} className="single-volunteer hidden">
-            <div className="role-title">
-              <h2 className="role">{item.role}</h2>
-            </div>
             <div>
-              <h3 className="employer">{item.employer}</h3>
+              <h2 className="role">{item.employer}</h2>
+            </div>
+            <div className="role-title">
+              <h3 className="employer">{item.role} {item.link.length > 0 ? <>| <a href={item.link} target="_blank" style={{color: '#0077b6'}} rel="noopener noreferrer">Learn More</a></> : null}</h3>
             </div>
             <div>
               <h3 className="description">{item.description}</h3>

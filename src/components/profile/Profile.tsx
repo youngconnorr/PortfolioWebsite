@@ -112,11 +112,11 @@ const Profile = () => {
         <Link to="/experience" className="web-link hidden link1">
           Experience
         </Link>
-        <Link to="/projects" className="web-link hidden3 link2">
-          Projects
-        </Link>
         <Link to="/volunteering" className="web-link hidden2 link3">
           Volunteering
+        </Link>
+        <Link to="/projects" className="web-link hidden3 link2">
+          Projects
         </Link>
         <Link to="/about" className="web-link hidden2 link3">
           About Me
