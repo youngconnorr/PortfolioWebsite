@@ -1,5 +1,5 @@
 import PFP from "../../tools/linkedpfp - Copy.jpg";
-import PDF from "../../tools/public_resume.pdf";
+// import PDF from "../../tools/public_resume.pdf";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
