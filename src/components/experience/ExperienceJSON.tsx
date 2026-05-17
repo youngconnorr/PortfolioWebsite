@@ -36,4 +36,11 @@ export const ExperienceJSON: Experience[] = [
     languages: "",
     description: "Machine Learning Product team driving enterprise adoption, model quality standards, and automation across large-scale systems.",
   },
+  {
+    id: 5,
+    role: "Machine Learning Intern 💸",
+    employer: "Questrade",
+    languages: "",
+    description: "Incoming Summer 2026",
+  },
 ];
