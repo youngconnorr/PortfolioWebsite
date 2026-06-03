@@ -38,7 +38,7 @@ export const ExperienceJSON: Experience[] = [
   },
   {
     id: 5,
-    role: "Machine Learning Intern 💸",
+    role: "Machine Learning Engineer Intern 💸",
     employer: "Questrade",
     languages: "",
     description: "Incoming Summer 2026",
