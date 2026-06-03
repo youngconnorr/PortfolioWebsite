@@ -41,7 +41,7 @@ export const VolunteeringJSON: Volunteering[] = [
     employer: "nwPlus 💻",
     languages: "Notion | Event Planning | Cross-functional Collaboration",
     description:
-      "Led operations for Western Canada’s largest hackathon (nwHacks), hosting 600+ participants and 30+ sponsors to deliver a high-scale technical event ",
+      "Led operations for Western Canada’s largest hackathon (nwHacks), hosting 750+ participants and 30+ sponsors to deliver a high-scale technical event ",
     link: "https://www.nwplus.io/"
   },
 ];
