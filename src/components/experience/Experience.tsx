@@ -32,10 +32,10 @@ const Experience = () => {
         {[...ExperienceJSON].reverse().map((job) => (
           <div key={job.id} className="single-job hidden">
             <div className="role-title">
-              <h2 className="role">{job.role} </h2>
+              <h2 className="role">{job.employer} </h2>
             </div>
             <div>
-              <h3 className="employer">{job.employer}</h3>
+              <h3 className="employer">{job.role}</h3>
             </div>
             {/* <div>
             <p className="languages">{job.languages}</p>

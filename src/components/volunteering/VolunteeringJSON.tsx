@@ -44,4 +44,13 @@ export const VolunteeringJSON: Volunteering[] = [
       "Led operations for Western Canada’s largest hackathon (nwHacks), hosting 750+ participants and 30+ sponsors to deliver a high-scale technical event ",
     link: "https://www.nwplus.io/"
   },
+  {
+    id: 5,
+    role: "Campus Leader",
+    employer: "Notion ✏️",
+    languages: "Club Collaboration | Event Coordinating | Community Building",
+    description:
+      "Led events totaling 10k+ students organizing events to push Notion's mission of shaping tools to a student's life",
+    link: "https://www.notion.com/"
+  }
 ];

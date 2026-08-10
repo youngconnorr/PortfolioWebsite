@@ -83,7 +83,7 @@ const Projects = () => {
                           onClick={() => window.open(project.link, "_blank")}
                           style={{ cursor: "pointer" }}
                         >
-                          Check out project
+                          Check out
                         </b>
                         <p className="text-section">{project.description}</p>
                       </div>
