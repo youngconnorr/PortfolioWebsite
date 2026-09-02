@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import { ExperienceJSON } from "./ExperienceJSON";
+import { handleGlowMove, glowColorRef, useRandomGlowColors } from "../../utils/glow";
 
 const Experience = () => {
+  const jobGlows = useRandomGlowColors(ExperienceJSON.length);
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -29,8 +32,13 @@ const Experience = () => {
       </div>
 
       <section className="experience-section">
-        {[...ExperienceJSON].reverse().map((job) => (
-          <div key={job.id} className="single-job hidden">
+        {[...ExperienceJSON].reverse().map((job, index) => (
+          <div
+            key={job.id}
+            className="single-job hidden glow-surface glow-experience"
+            onMouseMove={handleGlowMove}
+            ref={glowColorRef(jobGlows[index])}
+          >
             <div className="role-title">
               <h2 className="role">{job.employer} </h2>
             </div>

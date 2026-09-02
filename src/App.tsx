@@ -18,6 +18,7 @@ import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
 import Volunteering from "./components/volunteering/Volunteering";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import CustomCursor from "./components/cursor/CustomCursor";
 import { Routes, Route } from "react-router-dom";
 // import { projects } from "./tools/Projects";
 // import PFP from "./tools/DSCF2156.jpeg";
@@ -35,6 +36,7 @@ function App() {
 
   return (
     <>
+      <CustomCursor />
       {isProfile ? null : <Navbar />}
       <div className="page-wrapper" key={location.pathname}>
         <Routes>

@@ -21,12 +21,15 @@
   margin-bottom: 48px;
   padding: 24px 32px;
   border-radius: var(--apple-radius, 20px);
-  background-color: #ffffff;
-  box-shadow: var(--apple-shadow, 0 4px 16px rgba(0, 0, 0, 0.08));
+  background-color: #fbfbfd;
 }
 
 .single-job:hover {
   background-color: #f5f5f7;
+}
+
+.single-job.glow-experience {
+  --glow-size: 360px;
 }
 
 .experience-section {

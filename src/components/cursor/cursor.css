@@ -1,0 +1,49 @@
+/* Custom cursor: only on devices with a real mouse (skip touch). */
+@media (hover: hover) and (pointer: fine) {
+  html,
+  a,
+  button,
+  [role="button"],
+  input,
+  textarea,
+  select,
+  label {
+    cursor: none;
+  }
+
+  /* Outer wrapper: pure position tracking, no transition, so the dot
+     never lags behind the pointer. */
+  .custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate3d(var(--cursor-x, -100px), var(--cursor-y, -100px), 0);
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+
+  .custom-cursor--visible {
+    opacity: 1;
+  }
+
+  /* Inner dot: only the scale (hover grow) is animated. */
+  .custom-cursor-dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.15s ease-out;
+  }
+
+  .custom-cursor--hover .custom-cursor-dot {
+    transform: translate(-50%, -50%) scale(1.6);
+  }
+}

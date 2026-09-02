@@ -1,9 +1,13 @@
-import PFP from "../../tools/linkedpfp - Copy.jpg";
+import PFP from "../../tools/notion-face.png";
 // import PDF from "../../tools/public_resume.pdf";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { handleGlowMove, glowColorRef, useRandomGlowColors } from "../../utils/glow";
 
 const Profile = () => {
+  const [cardGlow, experienceGlow, volunteeringGlow, projectsGlow, aboutGlow] =
+    useRandomGlowColors(5);
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -27,12 +31,16 @@ const Profile = () => {
   return (
     <section className="intro-section">
 
-      <div className="intro-profile-div hidden4">
+      <div
+        className="intro-profile-div hidden4 glow-surface glow-name"
+        onMouseMove={handleGlowMove}
+        ref={glowColorRef(cardGlow)}
+      >
         <section className="intro-profile-section">
           {/* Right Section */}
           <div className="name-section">
             {/* <h1>Connor Young</h1> */}
-            <h1 className="welcome">Hi I'm Connor! 👋</h1>
+            <h1 className="">Hi I'm Connor!</h1>
               <div className="profile-page-about-me">
                 <h2>Software Engineer & Product Manager</h2>
                 <p>
@@ -109,16 +117,36 @@ const Profile = () => {
       </div>
 
       <div className="links-section">
-        <Link to="/experience" className="web-link hidden link1">
+        <Link
+          to="/experience"
+          className="web-link hidden link1 glow-surface glow-experience"
+          onMouseMove={handleGlowMove}
+          ref={glowColorRef(experienceGlow)}
+        >
           Experience
         </Link>
-        <Link to="/volunteering" className="web-link hidden2 link3">
+        <Link
+          to="/volunteering"
+          className="web-link hidden2 link3 glow-surface glow-volunteering"
+          onMouseMove={handleGlowMove}
+          ref={glowColorRef(volunteeringGlow)}
+        >
           Volunteering
         </Link>
-        <Link to="/projects" className="web-link hidden3 link2">
+        <Link
+          to="/projects"
+          className="web-link hidden3 link2 glow-surface glow-projects"
+          onMouseMove={handleGlowMove}
+          ref={glowColorRef(projectsGlow)}
+        >
           Projects
         </Link>
-        <Link to="/about" className="web-link hidden2 link3">
+        <Link
+          to="/about"
+          className="web-link hidden2 link3 glow-surface glow-about"
+          onMouseMove={handleGlowMove}
+          ref={glowColorRef(aboutGlow)}
+        >
           About Me
         </Link>
       </div>

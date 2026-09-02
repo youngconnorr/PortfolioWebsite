@@ -1,6 +1,9 @@
 import { useEffect } from "react";
+import { handleGlowMove, glowColorRef, useRandomGlowColors } from "../../utils/glow";
 
 const About = () => {
+  const [whoAmIGlow, valuesGlow, currentFocusGlow] = useRandomGlowColors(3);
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -22,7 +25,11 @@ const About = () => {
       <h2 className="about-subtitle">Aspirations & Values</h2>
 
       {/* Who Am I Section */}
-      <section className="about-section hidden">
+      <section
+        className="about-section hidden glow-surface glow-about"
+        onMouseMove={handleGlowMove}
+        ref={glowColorRef(whoAmIGlow)}
+      >
         <h3 className="section-label">Who am I?</h3>
         <h2 className="section-heading">Hi! I'm Connor 🐶</h2>
         <div className="section-content">
@@ -46,7 +53,11 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="about-section hidden2">
+      <section
+        className="about-section hidden2 glow-surface glow-about"
+        onMouseMove={handleGlowMove}
+        ref={glowColorRef(valuesGlow)}
+      >
         <h3 className="section-label">Values</h3>
         <h2 className="section-heading">My Principles</h2>
         <div className="values-grid">
@@ -70,7 +81,11 @@ const About = () => {
       </section>
 
       {/* Currently Working On Section */}
-      <section className="about-section hidden3">
+      <section
+        className="about-section hidden3 glow-surface glow-about"
+        onMouseMove={handleGlowMove}
+        ref={glowColorRef(currentFocusGlow)}
+      >
         <h3 className="section-label">Current Focus</h3>
         <h2 className="section-heading">What I'm Building</h2>
         <div className="section-content">

@@ -16,7 +16,6 @@
   visibility: hidden;
   transform: translateY(20px);
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 1000;
 }
 
@@ -29,11 +28,14 @@
 .scroll-to-top:hover {
   background-color: #f5f5f7;
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .scroll-to-top:active {
   transform: translateY(0);
+}
+
+.scroll-to-top.glow-name {
+  --glow-size: 90px;
 }
 
 .scroll-to-top svg {

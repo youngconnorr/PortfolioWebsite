@@ -4,7 +4,7 @@
 }
 
 .link-go-back {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding: 8px 16px;
   border-radius: 980px;

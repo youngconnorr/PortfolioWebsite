@@ -1,8 +1,11 @@
 import { projectJSON } from "./ProjectJSON";
 import { useRef } from "react";
+import { handleGlowMove, glowColorRef, useRandomGlowColors } from "../../utils/glow";
 
 const Projects = () => {
   const projectRefs = useRef<(HTMLElement | null)[]>([]);
+  const cardGlows = useRandomGlowColors(projectJSON.length);
+  const buttonGlows = useRandomGlowColors(projectJSON.length);
 
   //prettier-ignore
   // const colors = [
@@ -73,15 +76,21 @@ const Projects = () => {
                 ref={(el) => (projectRefs.current[index] = el)}
                 className={`project-row`}
               >
-                <div className="single-project">
+                <div
+                  className="single-project glow-surface glow-projects"
+                  onMouseMove={handleGlowMove}
+                  ref={glowColorRef(cardGlows[index])}
+                >
                   <div className="project-parent-div">
                     <h2 className="project-name">{project.name}</h2>
                     <div className="description-project">
                       <div>
                         <b
-                          className="check-out-button project-name"
+                          className="check-out-button project-name glow-surface glow-projects"
+                          role="button"
                           onClick={() => window.open(project.link, "_blank")}
-                          style={{ cursor: "pointer" }}
+                          onMouseMove={handleGlowMove}
+                          ref={glowColorRef(buttonGlows[index])}
                         >
                           Check out
                         </b>
@@ -89,10 +98,6 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="learning-card">
-                  <span className="learning-label">Learning Objective</span>
-                  <p className="learning-text">{project.learningObjective}</p>
                 </div>
               </section>
             </div>

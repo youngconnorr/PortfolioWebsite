@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { handleGlowMove, glowColorRef, useRandomGlowColor } from "../../utils/glow";
 import "./scrollToTop.css";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const glow = useRandomGlowColor();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,8 +26,10 @@ const ScrollToTop = () => {
 
   return (
     <button
-      className={`scroll-to-top ${isVisible ? "visible" : ""}`}
+      className={`scroll-to-top glow-surface glow-name ${isVisible ? "visible" : ""}`}
       onClick={scrollToTop}
+      onMouseMove={handleGlowMove}
+      ref={glowColorRef(glow)}
       aria-label="Scroll to top"
     >
       <svg

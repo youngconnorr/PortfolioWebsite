@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
+import { handleGlowMove, glowColorRef, useRandomGlowColor } from "../../utils/glow";
 import "./navbar.css";
 
 const Navbar = () => {
+  const glow = useRandomGlowColor();
+
   return (
     <div className="go-back hidden">
-      <Link to="/" className="link-go-back">
+      <Link
+        to="/"
+        className="link-go-back glow-surface glow-name"
+        onMouseMove={handleGlowMove}
+        ref={glowColorRef(glow)}
+      >
         <div className="back-button-arrow">
           <img
             width="16"

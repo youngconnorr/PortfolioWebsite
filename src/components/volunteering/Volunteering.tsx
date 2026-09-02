@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import { VolunteeringJSON } from "./VolunteeringJSON";
+import { handleGlowMove, glowColorRef, useRandomGlowColors } from "../../utils/glow";
 
 const Volunteering = () => {
+  const itemGlows = useRandomGlowColors(VolunteeringJSON.length);
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -25,8 +28,13 @@ const Volunteering = () => {
       </div>
 
       <section className="volunteering-section">
-        {[...VolunteeringJSON].reverse().map((item) => (
-          <div key={item.id} className="single-volunteer hidden">
+        {[...VolunteeringJSON].reverse().map((item, index) => (
+          <div
+            key={item.id}
+            className="single-volunteer hidden glow-surface glow-volunteering"
+            onMouseMove={handleGlowMove}
+            ref={glowColorRef(itemGlows[index])}
+          >
             <div>
               <h2 className="role">{item.employer}</h2>
             </div>

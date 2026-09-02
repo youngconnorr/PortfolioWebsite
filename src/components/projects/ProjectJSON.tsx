@@ -1,9 +1,9 @@
-import mindfit from "../../tools/mindfit.png";
-import photoWebsite from "../../tools/photoWebsite.png";
-import stockAnalyzer from "../../tools/stock_analyzer_photo.png";
-import advizrPhoto from "../../tools/advizr-photo.png";
-import moodifyPhoto from "../../tools/moodify-photo.png";
-import pathfinder from "../../tools/pathfinder.png";
+import mindfit from "../../tools/project-pictures/mindfit.png";
+import photoWebsite from "../../tools/project-pictures/photoWebsite.png";
+import stockAnalyzer from "../../tools/project-pictures/stock_analyzer_photo.png";
+import advizrPhoto from "../../tools/project-pictures/advizr-photo.png";
+import moodifyPhoto from "../../tools/project-pictures/moodify-photo.png";
+import pathfinder from "../../tools/project-pictures/pathfinder.png";
 
 export interface Project {
   id: number;
